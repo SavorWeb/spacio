@@ -45,6 +45,7 @@
 	<h2>Heading 2</h2>
 	<img class="right" src="http://www.placehold.it/500x300" alt="">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis, dolore, quos, numquam facilis voluptatum consectetur minima alias molestiae libero quibusdam rem error adipisci dolorem repellat accusamus dignissimos doloribus et!</p>
+	<a href="#modal" class="btn">Modal!</a>
 	<img src="http://www.placehold.it/1000x300" alt="">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, tempora, similique pariatur quo nostrum quia nam quaerat impedit optio commodi iste delectus nihil hic minus dolorum possimus sunt maxime dicta.</p>
 	<h3>Heading 3</h3>
@@ -63,6 +64,14 @@
 		<li>Things</li>
 	</ul>
 	
+</div>
+
+<div class="remodal" data-remodal-id="modal">
+    <h1>Remodal</h1>
+    <p>
+      Flat, responsive, lightweight, fast, easy customizable modal window plugin
+      with declarative state notation and hash tracking.
+    </p>
 </div>
 
 

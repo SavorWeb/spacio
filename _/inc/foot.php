@@ -34,6 +34,8 @@
 	});
 </script>
 
+<script type="text/javascript" src="_/js/jquery.remodal.min.js"></script>
+
 
 <script src="_/js/script.min.js"></script>
 
