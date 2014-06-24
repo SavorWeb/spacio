@@ -149,3 +149,58 @@ else{
 			<input type="submit" name="submit" class="button btn" id="submit" value="Send Message" />
 	</fieldset>
 </form>	
+
+
+
+-----
+
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="_/plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="_/plugins/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="_/plugins/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="_/plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="_/plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="_/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="_/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<script src="_/js/masonry.min.js"></script>
+<script src="_/js/imagesloaded.min.js"></script>
+<script>
+	$(document).ready( function() {
+			    // Don't execute if we're in the Live Editor
+			    if( !window.isCMS ) {
+			        // Group images by gallery using `data-fancybox-group` attributes
+			        var galleryId = 1;
+			        $('.editable-gallery').each( function() {
+			        	$(this).find('a').attr('data-fancybox-group', 'gallery-' + galleryId++);
+			        });
+			        // Initialize Fancybox
+			        $('.editable-gallery a').fancybox({
+			            // Use the `alt` attribute for captions per http://fancyapps.com/fancybox/#useful
+			            beforeShow: function() {
+			            	var alt = this.element.find('img').attr('alt');
+			            	this.inner.find('img').attr('alt', alt);
+			            	this.title = alt;
+			            }
+			        });
+			    }
+			});
+</script>
+<script>
+
+	$("#gallery").imagesLoaded(function() {
+		var container = document.querySelector('#gallery');
+		
+		var msnry = new Masonry( container, {
+			columnWidth: 55,
+			itemSelector: '.fancybox'
+		});
+		
+		console.log("Ran ImagesLoaded");
+	});
+	
+</script>

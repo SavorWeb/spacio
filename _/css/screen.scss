@@ -50,19 +50,23 @@ a {
 
 .pagehead {
 
-	background-color: $primary;
+	background-color: transparent;
+// needs latest Compass, add '@import "compass"' to your scss
+@include filter-gradient(#ffffff, #ffffff, vertical); // IE6-9
+@include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%));
+
 	overflow-x: hidden;
 
 	.logo {
 		display: block;
 		float: left;
-		margin: 12px 0 12px;
+		margin: 12px 0 25px;
 		max-width: 50%;
 		img {
 			width: 100%;
 		}
 		@include break($d) {
-			width: 30%;
+			width: 25%;
 			img {
 				max-width: 300px;
 			}
@@ -150,6 +154,32 @@ a {
 	}
 }
 
+.main-cover {
+	background: url(../img/main.jpg) no-repeat; 
+	background-position: -600px -50px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid $primary;
+	@include break($b) {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center -60px;
+	}
+	min-height: 700px;
+	position: relative;
+
+	// .row-bottom {
+	// 	position: relative;
+	// 	width: 100%;
+	// 	@include break($b) {
+	// 		bottom: 20px;
+	// 		position: absolute;
+	// 	}
+	// }
+}
+
 .editable-gallery {
 	.fancybox {
 		width: 40%;
@@ -167,7 +197,55 @@ a {
 	}
 }
 
+.tiles {
+	display: none;
+	@include break($d) {
+		display: block;
+		margin-top: -250px;
+	}
+}
+
 .typeset {
+	section {
+		margin-bottom: 50px;
+	}
+	.btn {
+		color: $pos;
+		display: inline-block;
+		padding: 10px;
+		background-color: $primary;
+		position: relative;
+		margin-right: 15px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		@include transition(all, 1s, ease-in-out);
+		top: 0;
+		left: 0;
+		&:after {
+			content: "";
+			background-color: #ccc;
+			position: absolute;
+			z-index: -1;
+			top: -5px;
+			left: -5px;
+			bottom: 5px;
+			right: 5px;
+		}
+		&:hover {
+			top: -5px;
+			left: -5px;
+			&:after {
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+			}
+		}
+	}
+	
+	p {
+		margin-bottom: 25px !important;
+	}
 
 	ul, ol {
 		margin-left: 15px;

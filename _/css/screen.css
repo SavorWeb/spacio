@@ -301,27 +301,34 @@ a:not(> img) {
 }
 
 .pagehead {
-  background-color: #aa0022;
+  background-color: transparent;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFFFFFFF');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   overflow-x: hidden;
 }
 .pagehead .logo {
   display: block;
   float: left;
-  margin: 12px 0 12px;
+  margin: 12px 0 25px;
   max-width: 50%;
 }
 .pagehead .logo img {
   width: 100%;
 }
 .lt-ie9 .pagehead .logo {
-  width: 30%;
+  width: 25%;
 }
 .lt-ie9 .pagehead .logo img {
   max-width: 300px;
 }
 @media screen and (min-width: 960px) {
   .pagehead .logo {
-    width: 30%;
+    width: 25%;
   }
   .pagehead .logo img {
     max-width: 300px;
@@ -425,6 +432,33 @@ a:not(> img) {
   color: white;
 }
 
+.main-cover {
+  background: url(../img/main.jpg) no-repeat;
+  background-position: -600px -50px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #aa0022;
+  min-height: 700px;
+  position: relative;
+}
+.lt-ie9 .main-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center -60px;
+}
+@media screen and (min-width: 420px) {
+  .main-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center -60px;
+  }
+}
+
 .editable-gallery .fancybox {
   width: 40%;
   margin-bottom: 10px;
@@ -444,6 +478,62 @@ a:not(> img) {
   max-width: 100%;
 }
 
+.tiles {
+  display: none;
+}
+.lt-ie9 .tiles {
+  display: block;
+  margin-top: -250px;
+}
+@media screen and (min-width: 960px) {
+  .tiles {
+    display: block;
+    margin-top: -250px;
+  }
+}
+
+.typeset section {
+  margin-bottom: 50px;
+}
+.typeset .btn {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  background-color: #aa0022;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  -webkit-transition: all, 1s, ease-in-out;
+  -moz-transition: all, 1s, ease-in-out;
+  -o-transition: all, 1s, ease-in-out;
+  transition: all, 1s, ease-in-out;
+  top: 0;
+  left: 0;
+}
+.typeset .btn:after {
+  content: "";
+  background-color: #ccc;
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: -5px;
+  bottom: 5px;
+  right: 5px;
+}
+.typeset .btn:hover {
+  top: -5px;
+  left: -5px;
+}
+.typeset .btn:hover:after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.typeset p {
+  margin-bottom: 25px !important;
+}
 .typeset ul, .typeset ol {
   margin-left: 15px;
 }
