@@ -362,7 +362,7 @@ button span {
   display: inline-block;
   width: 2rem;
   height: 0.2857143rem;
-  background: white;
+  background: black;
   border-radius: 0.1428571rem;
   transition: 0.3s;
   position: relative;
@@ -371,7 +371,7 @@ button span {
   display: inline-block;
   width: 2rem;
   height: 0.2857143rem;
-  background: white;
+  background: black;
   border-radius: 0.1428571rem;
   transition: 0.3s;
   position: absolute;
@@ -531,12 +531,9 @@ a:not(> img) {
   }
 }
 .pagehead .nav-collapse {
-  text-transform: uppercase;
   overflow: hidden;
   *zoom: 1;
-  background-color: #bbbbbb;
   clear: both;
-  text-align: center;
   font-weight: lighter;
   padding-bottom: 15px;
   position: relative;
@@ -544,27 +541,13 @@ a:not(> img) {
   margin: 0 -500%;
   padding: 0 500%;
 }
-.lt-ie9 .pagehead .nav-collapse {
-  width: 70%;
-  margin: 0;
-  padding: 0;
-  clear: none;
-  background-color: transparent;
-  float: right;
-  padding-bottom: 0;
-}
-@media screen and (min-width: 960px) {
-  .pagehead .nav-collapse {
-    width: 70%;
-    margin: 0;
-    padding: 0;
-    clear: none;
-    background-color: transparent;
-    float: right;
-    padding-bottom: 0;
-  }
+.pagehead .nav-collapse small {
+  text-align: center;
+  display: block;
 }
 .pagehead .nav-collapse ul {
+  text-transform: uppercase;
+  text-align: center;
   overflow: hidden;
   *zoom: 1;
   margin: 0;
@@ -583,7 +566,7 @@ a:not(> img) {
 }
 .pagehead .nav-collapse ul li {
   float: right;
-  width: 50%;
+  width: 100%;
   margin: 0;
   list-style-type: none;
 }
@@ -601,15 +584,55 @@ a:not(> img) {
   font-size: 0.9375em;
   display: inline-block;
   width: 100%;
-  color: black;
-  padding: 30px 5px;
-  background-color: transparent;
+  padding: 10px;
+  font-weight: thin;
+  letter-spacing: 1px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 15px;
   transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
 }
 .pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
   color: white;
+  background-color: rgba(170, 0, 34, 0.7);
+}
+.lt-ie9 .pagehead .nav-collapse {
+  width: 70%;
+  margin: 15px 0 0 0;
+  padding: 0;
+  clear: none;
+  background-color: transparent;
+  float: right;
+  padding-bottom: 0;
+}
+.lt-ie9 .pagehead .nav-collapse small {
+  text-align: right;
+  font-size: 0.75em;
+  margin-right: 5px;
+}
+.lt-ie9 .pagehead .nav-collapse ul li a {
+  margin-top: 5px;
+}
+@media screen and (min-width: 960px) {
+  .pagehead .nav-collapse {
+    width: 70%;
+    margin: 15px 0 0 0;
+    padding: 0;
+    clear: none;
+    background-color: transparent;
+    float: right;
+    padding-bottom: 0;
+  }
+  .pagehead .nav-collapse small {
+    text-align: right;
+    font-size: 0.75em;
+    margin-right: 5px;
+  }
+  .pagehead .nav-collapse ul li a {
+    margin-top: 5px;
+  }
 }
 
 .main-cover {
