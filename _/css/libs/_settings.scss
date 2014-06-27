@@ -36,18 +36,18 @@ $start-columns 						: $b;
 
 
 // Define your main colour palette using whatever naming system you like
-$jack-black							: #333;
+$jack-black							: #000;
 $macy-grey							: #777;	
 $ron-burgundy 						: #e0006e;
 $al-green 							: #67b2b1;
 $beige-ruth 						: #f5f0e0;
 $agent-orange 						: #c64f24;
-$betty-blue 						: #a8d9f4;
+$betty-blue 						: #000;
 
 $pos: #fff;
 $neg: #000;
 
-$primary 							: #aa0022;
+$primary 							: #c30016; //ab0c12
 $secondary							: #bbb;
 
 // Assign colours to variable roles
@@ -57,10 +57,10 @@ $secondary							: #bbb;
 $body-color 						: #fff;
 $base-color							: $macy-grey;
 $heading-color						: $jack-black;
-$hightlight-color 					: $betty-blue;
+$hightlight-color 					: $macy-grey;
 
-$action								: $agent-orange;
-$action-respond						: $al-green;
+$action								: $primary;
+$action-respond						: lighten($primary, 10%);
 
 
 // ------------------------------------------------------------

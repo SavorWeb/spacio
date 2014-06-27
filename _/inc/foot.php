@@ -18,10 +18,10 @@
 		auto: 10000,
 	});
 	var current1 = new Swipe(document.getElementById('current1'), {
-		// auto: 6000,
+		auto: 6000,
 	});
 	var current2 = new Swipe(document.getElementById('current2'), {
-		// auto: 6000,
+		auto: 8000,
 	});
 
 

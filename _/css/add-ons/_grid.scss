@@ -49,7 +49,7 @@
 
 // Drag row left to allow for equal spaced grid. AKA gutters
 // Gutters set in mixins.scss file
-.row__colspaced {
+.gutter-grid {
 	position: relative;
 	@extend %pie-clearfix;
 	@include break($start-columns) {			

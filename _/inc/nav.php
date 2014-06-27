@@ -1,5 +1,5 @@
 <header class="pagehead pullwidth">
-	<section class="row">
+	<div class="row">
 		<a class="logo" href="/spacio/"><img src="_/img/logo.png" alt=""></a>
 
 		<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
@@ -12,5 +12,5 @@
 				<li><a href="/about">Condominiums</a></li>
 			</ul>
 		</nav>
-	</section>
+	</div>
 </header>

@@ -34,7 +34,7 @@ body {
 a {
 	color: $action;
 	text-decoration: none;
-	@include link-active-styles { 	// Mixin for interactions (hover,focus,active)
+	@include active { 	// Mixin for interactions (hover,focus,active)
 		color: $action-respond;
 	}
 	&:not(>img) {
@@ -56,6 +56,10 @@ a {
 @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%));
 
 	overflow-x: hidden;
+
+	.row {
+		padding-top: 15px !important;
+	}
 
 	.logo {
 		display: block;
@@ -238,11 +242,11 @@ a {
 		text-transform: uppercase;
 		top: 0px;
 		left: 0px;
-		-webkit-transition: all 0.2s ease-in-out;
-		-moz-transition: all 0.2s ease-in-out;
-		-ms-transition: all 0.2s ease-in-out;
-		-o-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
 		&:after {
 			content: "";
 			background-color: #ccc;
@@ -252,11 +256,11 @@ a {
 			left: -5px;
 			bottom: 5px;
 			right: 5px;
-		-webkit-transition: all 0.2s ease-in-out;
-		-moz-transition: all 0.2s ease-in-out;
-		-ms-transition: all 0.2s ease-in-out;
-		-o-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
 		}
 		&:hover {
 			top: -5px;
@@ -345,6 +349,22 @@ a {
 	padding-bottom: 20px;
 }
 
+.remodal {
+	.row {
+		padding: 0;
+		width: 100%;
+		min-width: 100%;
+	}
+	h1 {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid $neg;
+	}
+	p {
+		padding-bottom: 10px;
+	}
+}
+
 .hero-headline {
 	color: $pos;
 	background-color: transparentize($primary, 0.3);
@@ -402,6 +422,18 @@ a {
 	padding: 0px 20px 10px;
 }
 
+#portfolio {
+	max-height: 600px;
+	overflow: hidden;
+}
+
+#current1, #current2 {
+	max-height: 300px;
+	overflow: hidden;
+	border-bottom: 2px solid $primary;
+	margin-bottom: 25px;
+}
+
 .review {
 	h1 {
 		font-size: $size6;
@@ -417,8 +449,27 @@ a {
 	margin-bottom: 50px;
 }
 
-.swipe-wrap a img {
-	border-bottom: 2px solid $primary;
+.greybg {
+	background-color: darken($pos, 10%);
+}
+
+.redbg {
+	background-color: $primary;
+	background-image: url('../img/dark-cut.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+.contact-details {
+	text-align: right;
+	color: $pos;
+	a {
+		color: $pos;
+		@include active {
+			color: darken($pos, 10%);
+		}
+	}
 }
 
 /* ::Import styles */

@@ -46,7 +46,7 @@
 // Link hover styles
 // -------------------------------------------------------
 
-@mixin link-active-styles {
+@mixin active {
 	&:hover, &:focus, &:active {
 		@content; 
 	}
