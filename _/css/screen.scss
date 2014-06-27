@@ -168,6 +168,11 @@ a {
 	}
 }
 
+// ------------------------------------------------------------
+// END Navigation module
+// ------------------------------------------------------------
+
+
 .main-cover {
 	background: url(../img/main.jpg) no-repeat; 
 	background-position: -600px -50px;
@@ -220,9 +225,7 @@ a {
 }
 
 .typeset {
-	section {
-		margin-bottom: 50px;
-	}
+
 	.btn {
 		color: $pos;
 		display: inline-block;
@@ -230,11 +233,16 @@ a {
 		background-color: $primary;
 		position: relative;
 		margin-right: 15px;
+		margin-top: 15px;
 		margin-bottom: 10px;
 		text-transform: uppercase;
-		@include transition(all, 1s, ease-in-out);
-		top: 0;
-		left: 0;
+		top: 0px;
+		left: 0px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
 		&:after {
 			content: "";
 			background-color: #ccc;
@@ -244,6 +252,11 @@ a {
 			left: -5px;
 			bottom: 5px;
 			right: 5px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
 		}
 		&:hover {
 			top: -5px;
@@ -258,7 +271,7 @@ a {
 	}
 	
 	p {
-		margin-bottom: 25px !important;
+		margin-bottom: 25px;
 	}
 
 	ul, ol {
@@ -297,15 +310,20 @@ a {
 	}
 
 	blockquote {
-		padding: 5%;
+	
+		width: 100%;
+		margin-bottom: 10px;
+	
+		padding: 4%;
 		clear: both;
-		background-color: $secondary;
-		color: $pos;
-		@include break($b) {
-			clear: none;
-			float: right;
-		}
-		p {
+		background-color: lighten($secondary, 30%);
+		border: 1px solid $secondary;
+		border-bottom-width: 8px;
+		// box-shadow: 0 2px 5px rgba(0,0,0,0.1);	
+		color: $neg;
+		.quote {
+			font-size: em-font(10px);
+			font-style: normal !important;
 			&:before {
 				content: "“ ";
 			}
@@ -313,8 +331,8 @@ a {
 				content: " ”";	
 			}
 		}
-		i {
-			font-size: em-font(10px);
+		.source {
+			font-size: em-font(6px);
 		}
 	}
 }
@@ -322,12 +340,38 @@ a {
 // LAYOUT //
 ////////////
 
-.row.typeset {
-	padding-top: 20px;
+.row {
+	padding-top: 35px;
 	padding-bottom: 20px;
 }
 
-.hero {
+.hero-headline {
+	color: $pos;
+	background-color: transparentize($primary, 0.3);
+	display: inline-block;
+	padding: 15px;
+	font-weight: lighter;
+	font-family: 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif;
+	font-size: em-font(50px);
+	letter-spacing: 1px;
+	position: relative;
+	top: 50px;
+
+	&:before {
+	  content: "";
+	  position: absolute;
+	  background: transparentize($primary, 0.3);  /* Match the background */
+	  top: 0;
+	  bottom: 0;
+	  width: 9999px;   /* some huge width */
+	  // margin-right: -20px;
+	  // @include break($c) {
+	  // 	margin-right: -40px;
+	  // }
+	} 
+	&:before {
+	  right: 100%;
+	}
 
 }
 
@@ -356,6 +400,25 @@ a {
 
 .acc-panel {
 	padding: 0px 20px 10px;
+}
+
+.review {
+	h1 {
+		font-size: $size6;
+		color: $primary;
+	}
+	h2 {
+		text-transform: normal;
+		margin-bottom: 10px;
+	}
+}
+
+.feature {
+	margin-bottom: 50px;
+}
+
+.swipe-wrap a img {
+	border-bottom: 2px solid $primary;
 }
 
 /* ::Import styles */

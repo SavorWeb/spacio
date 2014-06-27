@@ -1,6 +1,6 @@
 <header class="pagehead pullwidth">
 	<section class="row">
-		<a class="logo" href="/RyanSassBase/"><img src="_/img/logo.png" alt=""></a>
+		<a class="logo" href="/spacio/"><img src="_/img/logo.png" alt=""></a>
 
 		<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 

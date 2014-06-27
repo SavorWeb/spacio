@@ -70,20 +70,20 @@ $action-respond						: $al-green;
 // Greek alphabet naming system. Obscure, yet hierarchical.
 // Allows us to avoid naming based on html object. 
 // Eg. A h1 can be smaller visually, than a h4.
-$alpha   	: 42px;
-$beta		: 32px;
-$gamma		: 28px;
-$delta		: 26px;
-$epsilon	: 24px;
-$zeta		: 20px;
-$eta		: 18px;
-$theta		: 15px;
-$iota 		: 14px;
-$kappa 		: 12px;
+$size1   	: 42px;
+$size2		: 32px;
+$size3		: 28px;
+$size4		: 26px;
+$size5		: 24px;
+$size6		: 20px;
+$size7		: 18px;
+$size8		: 15px;
+$size9 		: 14px;
+$size10 	: 12px;
 
 
-$para		: $theta; 	// Paragraph size
-$quote		: $beta;	// Quote size
+$para		: $size8; 	// Paragraph size
+$quote		: $size2;	// Quote size
 
 
 

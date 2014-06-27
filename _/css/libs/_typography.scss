@@ -7,9 +7,12 @@
 // Fonts
 // ------------------------------------------------------------
 
-.font-body 					{  font-family: 'Open Sans', sans-serif, sans-serif; }
+.font-body 					{  font-family: Helvetica, 'Helvetica', sans-serif, sans-serif; }
 .sans 					{  font-family: Helvetica, Arial, sans-serif; }
 
+	h1, h2, .headline, h3, h4, h5, h6, .btn, .futura {
+		font-family: 'Futura', 'Helvetica', Helvetica, Arial, sans-serif;
+	}
 
 // ------------------------------------------------------------
 // Core typography

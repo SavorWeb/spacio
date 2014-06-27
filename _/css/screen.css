@@ -326,10 +326,14 @@ body.remodal_active .remodal {
   position: relative;
 }
 
-.swipe-wrap > div {
+.swipe-wrap > a {
   float: left;
   width: 100%;
   position: relative;
+}
+
+.swipe-wrap a {
+  display: block;
 }
 
 button {
@@ -695,9 +699,6 @@ a:not(> img) {
   }
 }
 
-.typeset section {
-  margin-bottom: 50px;
-}
 .typeset .btn {
   color: white;
   display: inline-block;
@@ -705,14 +706,16 @@ a:not(> img) {
   background-color: #aa0022;
   position: relative;
   margin-right: 15px;
+  margin-top: 15px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  -webkit-transition: all, 1s, ease-in-out;
-  -moz-transition: all, 1s, ease-in-out;
-  -o-transition: all, 1s, ease-in-out;
-  transition: all, 1s, ease-in-out;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .typeset .btn:after {
   content: "";
@@ -723,6 +726,11 @@ a:not(> img) {
   left: -5px;
   bottom: 5px;
   right: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .typeset .btn:hover {
   top: -5px;
@@ -735,7 +743,7 @@ a:not(> img) {
   left: 0;
 }
 .typeset p {
-  margin-bottom: 25px !important;
+  margin-bottom: 25px;
 }
 .typeset ul, .typeset ol {
   margin-left: 15px;
@@ -787,34 +795,58 @@ a:not(> img) {
   }
 }
 .typeset blockquote {
-  padding: 5%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 4%;
   clear: both;
-  background-color: #bbbbbb;
-  color: white;
+  background-color: white;
+  border: 1px solid #bbbbbb;
+  border-bottom-width: 8px;
+  color: black;
 }
-.lt-ie9 .typeset blockquote {
-  clear: none;
-  float: right;
+.typeset blockquote .quote {
+  font-size: 0.625em;
+  font-style: normal !important;
 }
-@media screen and (min-width: 420px) {
-  .typeset blockquote {
-    clear: none;
-    float: right;
-  }
-}
-.typeset blockquote p:before {
+.typeset blockquote .quote:before {
   content: "“ ";
 }
-.typeset blockquote p:after {
+.typeset blockquote .quote:after {
   content: " ”";
 }
-.typeset blockquote i {
-  font-size: 0.625em;
+.typeset blockquote .source {
+  font-size: 0.375em;
 }
 
-.row.typeset {
-  padding-top: 20px;
+.row {
+  padding-top: 35px;
   padding-bottom: 20px;
+}
+
+.hero-headline {
+  color: white;
+  background-color: rgba(170, 0, 34, 0.7);
+  display: inline-block;
+  padding: 15px;
+  font-weight: lighter;
+  font-family: 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif;
+  font-size: 3.125em;
+  letter-spacing: 1px;
+  position: relative;
+  top: 50px;
+}
+.hero-headline:before {
+  content: "";
+  position: absolute;
+  background: rgba(170, 0, 34, 0.7);
+  /* Match the background */
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  /* some huge width */
+}
+.hero-headline:before {
+  right: 100%;
 }
 
 .typeset ul.acc {
@@ -844,14 +876,35 @@ a:not(> img) {
   padding: 0px 20px 10px;
 }
 
+.review h1 {
+  font-size: 20px;
+  color: #aa0022;
+}
+.review h2 {
+  text-transform: normal;
+  margin-bottom: 10px;
+}
+
+.feature {
+  margin-bottom: 50px;
+}
+
+.swipe-wrap a img {
+  border-bottom: 2px solid #aa0022;
+}
+
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 .font-body, body {
-  font-family: 'Open Sans', sans-serif, sans-serif;
+  font-family: Helvetica, 'Helvetica', sans-serif, sans-serif;
 }
 
 .sans, .pagehead .nav-collapse ul li a {
   font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, .headline, h3, h4, h5, h6, .btn, .futura {
+  font-family: 'Futura', 'Helvetica', Helvetica, Arial, sans-serif;
 }
 
 p, span, cite, ol, ul, pre, label, input, textarea {
@@ -1060,6 +1113,15 @@ form .btn {
 
 .as-blockquote--typeset, .typeset blockquote {
   margin: 0.825em 0;
+}
+
+.typeset h1, .typeset h2, .typeset .headline {
+  text-transform: uppercase;
+  color: black;
+}
+.typeset h3, .typeset h4, .typeset h5, .typeset h6 {
+  color: #aa0022;
+  font-weight: bold;
 }
 
 .row, .row__colspaced {

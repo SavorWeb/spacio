@@ -8,11 +8,23 @@
 		customToggle: "#nav-toggle"
 	});
 
-	var elem = document.getElementById('slider');
+	// var elem = document.getElementById('slider');
 	
-	window.mySwipe = Swipe(elem, {
-		auto: 6000,
+	// window.mySwipe = Swipe(elem, {
+	// 	auto: 6000,
+	// });
+	window.mySwipe = $('.swipe').Swipe().data('Swipe');
+	var portfolio = new Swipe(document.getElementById('portfolio'), {
+		auto: 10000,
 	});
+	var current1 = new Swipe(document.getElementById('current1'), {
+		// auto: 6000,
+	});
+	var current2 = new Swipe(document.getElementById('current2'), {
+		// auto: 6000,
+	});
+
+
 </script>
 
 <script src="_/js/jquery.validate.min.js"></script>
