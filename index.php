@@ -113,13 +113,16 @@
 	</div>
 
 	<div class="gutter-grid">
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
+		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
 			<img src="http://www.placehold.it/400x300" alt="">
 		</div>
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
+		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
 			<img src="http://www.placehold.it/400x300" alt="">
 		</div>
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
+		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
+			<img src="http://www.placehold.it/400x300" alt="">
+		</div>
+		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
 			<img src="http://www.placehold.it/400x300" alt="">
 		</div>
 	</div>	
