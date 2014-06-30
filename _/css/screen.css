@@ -645,19 +645,16 @@ a:not(> img) {
 
 .main-cover {
   background: url(../img/main.jpg) no-repeat;
-  background-position: -600px -50px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #c30016;
   min-height: 700px;
   position: relative;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #c30016;
 }
 .lt-ie9 .main-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center -60px;
 }
 @media screen and (min-width: 420px) {
   .main-cover {
@@ -665,8 +662,6 @@ a:not(> img) {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center -60px;
   }
 }
 
@@ -894,9 +889,10 @@ a:not(> img) {
   padding: 0px 20px 10px;
 }
 
-#portfolio {
-  max-height: 600px;
+.portfolio-window {
+  max-height: 500px;
   overflow: hidden;
+  position: relative;
 }
 
 #current1, #current2 {
@@ -925,10 +921,8 @@ a:not(> img) {
 
 .redbg {
   background-color: #c30016;
-  background-image: url("../img/dark-cut.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
+  background-image: url("../img/darkcut-p.png");
+  background-size: 100%;
 }
 
 .contact-details {
@@ -942,6 +936,33 @@ a:not(> img) {
   color: #e6e6e6;
 }
 
+.tile-ani {
+  animation-name: hovering;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  /* Firefox: */
+  -moz-animation-name: hovering;
+  -moz-animation-duration: 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-play-state: running;
+  /* Safari and Chrome: */
+  -webkit-animation-name: hovering;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+@keyframes hovering {}
+@-moz-keyframes hovering {}
+@-webkit-keyframes hovering {}
+/*   END THUMB ANIMATIONS  */
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 .font-body, body {

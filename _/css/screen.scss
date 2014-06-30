@@ -179,20 +179,20 @@ a {
 
 .main-cover {
 	background: url(../img/main.jpg) no-repeat; 
-	background-position: -600px -50px;
-	margin-bottom: 30px;
-	border-bottom: 2px solid $primary;
+	// background-position: -600px -50px;
 	@include break($b) {
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		background-attachment: fixed;
-		background-position: center -60px;
+		// background-attachment: fixed;
+		// background-position: center -60px;
 	}
+
 	min-height: 700px;
 	position: relative;
-
+	margin-bottom: 30px;
+	border-bottom: 2px solid $primary;
 	// .row-bottom {
 	// 	position: relative;
 	// 	width: 100%;
@@ -423,9 +423,15 @@ a {
 }
 
 #portfolio {
-	max-height: 600px;
-	overflow: hidden;
+
 }
+
+.portfolio-window {
+	max-height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
 
 #current1, #current2 {
 	max-height: 300px;
@@ -455,10 +461,11 @@ a {
 
 .redbg {
 	background-color: $primary;
-	background-image: url('../img/dark-cut.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-position: center center;
+	background-image: url('../img/darkcut-p.png');
+	// background-repeat: no-repeat;
+	background-size: 100%;
+	// background-size: 100% 100%;
+	// background-position: center center;
 }
 
 .contact-details {
@@ -471,6 +478,64 @@ a {
 		}
 	}
 }
+
+.tile {
+
+}
+
+.tile-ani
+{
+animation-name:hovering;
+animation-duration:5s;
+animation-timing-function:linear;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+-moz-animation-name:hovering;
+-moz-animation-duration:5s;
+-moz-animation-timing-function:linear;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+-webkit-animation-name:hovering;
+-webkit-animation-duration:5s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+}
+
+@keyframes hovering
+{
+0% {}
+25% {}
+50% {}
+75% {}
+100% {}
+}
+
+@-moz-keyframes hovering /* Firefox */
+{
+0% {}
+25% {}
+50% {}
+75% {}
+100% {}
+}
+
+@-webkit-keyframes hovering /* Safari and Chrome */
+{
+0% {}
+25% {}
+50% {}
+75% {}
+100% {}
+}
+
+/*   END THUMB ANIMATIONS  */
+
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */

@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<div class="main-cover">
+	<div class="main-cover parallax" data-velocity="-0.45">
 		<?php include("_/inc/nav.php"); ?>
 
 		<div class="row">
@@ -34,14 +34,15 @@
 			<img class="tiles" src="_/img/float-tiles.png" alt="">
 		</div>
 	</section>
-
-	<div id='portfolio' class='swipe'>
-		<div id="slider-pictures" class='swipe-wrap editable-gallery'>
+<div class="portfolio-window">
+	<div id='portfolio' class='swipe parallax-item' data-velocity="-0.45">
+		<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
 			<a href="media/photos/p1.jpg"><img src="media/photos/p1.jpg" alt=""></a>
 			<a href="media/photos/p2.jpg"><img src="media/photos/p2.jpg" alt=""></a>
 			<a href="media/photos/p3.jpg"><img src="media/photos/p3.jpg" alt=""></a>
 		</div>
 	</div>
+</div>
 <!-- <div style='text-align:center;padding-top:20px;'>
   
   <button onclick='mySwipe.prev()'>prev</button> 
@@ -68,7 +69,7 @@
 	</div>
 	<div class="colspan12-8 colspan6-4 as-grid">
 		<div id='current1' class='swipe'>
-			<div id="slider-pictures" class='swipe-wrap editable-gallery'>
+			<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
 				<a href="media/photos/p4.jpg"><img src="media/photos/p4.jpg" alt=""></a>
 				<a href="media/photos/p5.jpg"><img src="media/photos/p5.jpg" alt=""></a>
 				<a href="media/photos/p6.jpg"><img src="media/photos/p6.jpg" alt=""></a>
@@ -82,7 +83,7 @@
 	</div>
 	<div class="colspan12-8 colspan6-4 as-grid">
 		<div id='current2' class='swipe'>
-			<div id="slider-pictures" class='swipe-wrap editable-gallery'>
+			<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
 				<a href="media/photos/p7.jpg"><img src="media/photos/p7.jpg" alt=""></a>
 				<a href="media/photos/p8.jpg"><img src="media/photos/p8.jpg" alt=""></a>
 				<a href="media/photos/p9.jpg"><img src="media/photos/p9.jpg" alt=""></a>
@@ -99,8 +100,8 @@
 <div class="greybg">
 <section class="row typeset">
 	<h1>Clients</h1>
-
-	<div class="gutter-grid">
+	<img src="_/img/buildings.jpg" />
+	<!-- <div class="gutter-grid">
 		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
 			<img src="http://www.placehold.it/400x300" alt="">
 		</div>
@@ -137,11 +138,11 @@
 		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
 			<img src="http://www.placehold.it/400x300" alt="">
 		</div>
-	</div>	
+	</div>	 -->
 </section>
 </div>
 
-<div class="redbg">
+<div class="redbg parallax" data-velocity="-0.8">
 	<section class="row typeset">
 		<footer>
 			<div class="colspan12-4 as-grid">
@@ -238,6 +239,34 @@
 	<div class="remodal typeset" data-remodal-id="centers">
 		<h1>Design Centers</h1>
 		<p>Creating a valuable presence for developers we partner with, SPACiO can efficiently build an on-site, full service design center at a Condominium locale. This center is an instrumental tool in illustrating to condo unit buyers how turnkey the design build-out process can be. Here, we can display design options, and provide buyers with an overview of SPACiO’s approach to their unit.</p>
+	</div>
+
+	<div class="remodal typeset" data-remodal-id="details1">
+		<h1>Project Title 1</h1>
+		<img class="right" src="http://www.placehold.it/400x300">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="remodal typeset" data-remodal-id="details2">
+		<h1>Project Title 2</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<img src="http://www.placehold.it/400x300">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 
 	<?php include("_/inc/foot.php"); ?>

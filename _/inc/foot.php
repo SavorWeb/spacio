@@ -48,6 +48,11 @@
 
 <script type="text/javascript" src="_/js/jquery.remodal.min.js"></script>
 
+<script src="_/js/jquery.scrolly.min.js"></script>
+<script type="text/javascript">
+	$('.parallax').scrolly({bgParallax: true});
+	$('.parallax-item').scrolly();
+</script>
 
 <script src="_/js/script.min.js"></script>
 
