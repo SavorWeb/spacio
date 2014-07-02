@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<div class="main-cover parallax" data-velocity="-0.45">
+	<div class="main-cover parallax" data-velocity="-0.5">
 		<?php include("_/inc/nav.php"); ?>
 
 		<div class="row">
@@ -31,7 +31,17 @@
 			</div>
 		</div>
 		<div class="colspan12-5 as-grid with-gutter">
-			<img class="tiles" src="_/img/float-tiles.png" alt="">
+			<!-- <img class="tiles" src="_/img/float-tiles.png" alt=""> -->
+			<div class="tiles">
+				<div class="tile tile-1"><img class="tile-ani1" src="_/img/tiles-1.png" alt=""></div>
+				<div class="tile tile-2"><img class="tile-ani2" src="_/img/tiles-2.png" alt=""></div>
+				<div class="tile tile-3"><img class="tile-ani3" src="_/img/tiles-3.png" alt=""></div>
+				<div class="tile tile-4"><img class="tile-ani2" src="_/img/tiles-4.png" alt=""></div>
+				<div class="tile tile-5"><img class="tile-ani1" src="_/img/tiles-5.png" alt=""></div>
+				<div class="tile tile-6"><img class="tile-ani3" src="_/img/tiles-6.png" alt=""></div>
+				<div class="tile tile-7"><img class="tile-ani2" src="_/img/tiles-7.png" alt=""></div>
+				<div class="tile tile-8"><img class="tile-ani1" src="_/img/tiles-8.png" alt=""></div>
+			</div>
 		</div>
 	</section>
 <div class="portfolio-window">
@@ -70,7 +80,7 @@
 	<div class="colspan12-8 colspan6-4 as-grid">
 		<div id='current1' class='swipe'>
 			<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<a href="media/photos/p4.jpg"><img src="media/photos/p4.jpg" alt=""></a>
+				<a href="media/photos/p4.jpg"><img src="media/photos/p10.jpg" alt=""></a>
 				<a href="media/photos/p5.jpg"><img src="media/photos/p5.jpg" alt=""></a>
 				<a href="media/photos/p6.jpg"><img src="media/photos/p6.jpg" alt=""></a>
 			</div>
@@ -143,12 +153,12 @@
 </div>
 
 <div class="redbg parallax" data-velocity="-0.8">
-	<section class="row typeset">
+	<section class="row">
 		<footer>
 			<div class="colspan12-4 as-grid">
-				<img src="_/img/logo-white.png" alt="">
+				<img class="footer-logo" src="_/img/logo-white.png" alt="">
 			</div>
-			<div class="colspan12-8 as-grid contact-details">
+			<div class="colspan12-8 as-grid contact-details typeset">
 				<p>Call us any time for a consultation</p>
 				<p>
 					<h3><a href="tel:7863530856">786.353.0856</a></h3>

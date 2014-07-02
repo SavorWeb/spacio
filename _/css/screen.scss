@@ -84,6 +84,8 @@ a {
 		padding-left: 15px;
 		padding-right: 15px;
 		border-radius: 0;
+		top: 10px;
+		position: relative;
 		@include break($d) {
 			display: none;
 		}
@@ -123,6 +125,21 @@ a {
 				@include break($d) {
 					width: auto;
 					margin: 0 1%;
+					&.phonecall {
+						clear: both;
+						width: 100%;
+					}
+					small a {
+						background-color: transparent;
+						display: inline;
+						color: $primary;
+						padding: 0;
+						margin: 0;
+						&:hover {
+							background-color: transparent;
+							color: lighten($primary, 10%);
+						}
+					}
 				}
 
 				a {
@@ -179,20 +196,31 @@ a {
 
 .main-cover {
 	background: url(../img/main.jpg) no-repeat; 
+	// -webkit-transition: all 0s ease-in-out;
+	// -moz-transition: all 0s ease-in-out;
+	// -ms-transition: all 0s ease-in-out;
+	// -o-transition: all 0s ease-in-out;
+	// transition: all 0s ease-in-out;
 	// background-position: -600px -50px;
-	@include break($b) {
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		// background-attachment: fixed;
-		// background-position: center -60px;
-	}
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: static;
+	background-position: center;
 
-	min-height: 700px;
+	overflow: hidden;
+
+	min-height: 500px;
 	position: relative;
 	margin-bottom: 30px;
-	border-bottom: 2px solid $primary;
+	border-top: 5px solid $primary;
+
+	@include break($b) {
+		min-height: 700px;
+		background-attachment: fixed;
+		//background-position: center -60px;
+	}
 	// .row-bottom {
 	// 	position: relative;
 	// 	width: 100%;
@@ -201,6 +229,41 @@ a {
 	// 		position: absolute;
 	// 	}
 	// }
+}
+
+.hero-headline {
+	color: $pos;
+	background-color: transparentize($primary, 0.3);
+	display: inline-block;
+	padding: 15px;
+	font-weight: lighter;
+	font-family: 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif;
+	font-size: em-font(25px);
+	letter-spacing: 1px;
+	position: relative;
+	top: 165px;
+
+	@include break($d) {
+		font-size: em-font(50px);
+		top: 50px;
+	}
+
+	&:before {
+	  content: "";
+	  position: absolute;
+	  background: transparentize($primary, 0.3);  /* Match the background */
+	  top: 0;
+	  bottom: 0;
+	  width: 9999px;   /* some huge width */
+	  // margin-right: -20px;
+	  // @include break($c) {
+	  // 	margin-right: -40px;
+	  // }
+	} 
+	&:before {
+	  right: 100%;
+	}
+
 }
 
 .editable-gallery {
@@ -222,11 +285,178 @@ a {
 
 .tiles {
 	display: none;
+	position: relative;
 	@include break($d) {
 		display: block;
 		margin-top: -250px;
 	}
 }
+
+
+.tile {
+	position: absolute;
+	&.tile-1 {
+	  top: 0px;
+	  left: 120px;
+	  z-index: 1;
+	}
+	&.tile-2 {
+	  top: 120px;
+	  left: 36px;
+	}
+	&.tile-3 {
+	  top: 70px;
+	  left: 160px;
+	}
+	&.tile-4 {
+	  top: 240px;
+	  left: 170px;
+	}
+	&.tile-5 {
+	  top: 290px;
+	  left: 33px;
+	}
+	&.tile-6 {
+	  top: 430px;
+	  left: 190px;
+	}
+	&.tile-7 {
+	  top: 490px;
+	  left: 65px;
+	}
+	&.tile-8 {
+	  top: 550px;
+	  left: 100px;
+	}
+}
+
+.tile-ani1 {
+	position: relative;
+	animation-name:ani1;
+	animation-duration:3s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+	/* Firefox: */
+	-moz-animation-name:ani1;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	-moz-animation-play-state:running;
+	/* Safari and Chrome: */
+	-webkit-animation-name:ani1;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-play-state:running;
+}
+
+@keyframes ani1
+{
+	0% {top:0px;}
+	100% {top:10px}
+}
+
+@-moz-keyframes ani1 /* Firefox */
+{
+	0% {top:0px;}
+	100% {top:10px}
+}
+
+@-webkit-keyframes ani1 /* Safari and Chrome */
+{
+	0% {top:0px;}
+	100% {top:10px}
+}
+
+.tile-ani2 {
+	position: relative;
+	animation-name:ani2;
+	animation-duration:2s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+	/* Firefox: */
+	-moz-animation-name:ani2;
+	-moz-animation-duration:2s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	-moz-animation-play-state:running;
+	/* Safari and Chrome: */
+	-webkit-animation-name:ani2;
+	-webkit-animation-duration:2s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-play-state:running;
+}
+
+@keyframes ani2
+{
+	0% {bottom:0px;}
+	100% {bottom:5px}
+}
+
+@-moz-keyframes ani2 /* Firefox */
+{
+	0% {bottom:0px;}
+	100% {bottom:5px}
+}
+
+@-webkit-keyframes ani2 /* Safari and Chrome */
+{
+	0% {bottom:0px;}
+	100% {bottom:5px}
+}
+
+.tile-ani3 {
+	position: relative;
+	animation-name:ani3;
+	animation-duration:2s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+	/* Firefox: */
+	-moz-animation-name:ani3;
+	-moz-animation-duration:2s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	-moz-animation-play-state:running;
+	/* Safari and Chrome: */
+	-webkit-animation-name:ani3;
+	-webkit-animation-duration:2s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-play-state:running;
+}
+
+@keyframes ani3
+{
+	0% {bottom:0px;}
+	100% {bottom:7px}
+}
+
+@-moz-keyframes ani3 /* Firefox */
+{
+	0% {bottom:0px;}
+	100% {bottom:7px}
+}
+
+@-webkit-keyframes ani3 /* Safari and Chrome */
+{
+	0% {bottom:0px;}
+	100% {bottom:7px}
+}
+
+/*   END tile ANIMATIONS  */
 
 .typeset {
 
@@ -365,36 +595,6 @@ a {
 	}
 }
 
-.hero-headline {
-	color: $pos;
-	background-color: transparentize($primary, 0.3);
-	display: inline-block;
-	padding: 15px;
-	font-weight: lighter;
-	font-family: 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif;
-	font-size: em-font(50px);
-	letter-spacing: 1px;
-	position: relative;
-	top: 50px;
-
-	&:before {
-	  content: "";
-	  position: absolute;
-	  background: transparentize($primary, 0.3);  /* Match the background */
-	  top: 0;
-	  bottom: 0;
-	  width: 9999px;   /* some huge width */
-	  // margin-right: -20px;
-	  // @include break($c) {
-	  // 	margin-right: -40px;
-	  // }
-	} 
-	&:before {
-	  right: 100%;
-	}
-
-}
-
 .typeset ul.acc {
 	margin-left: 0;
 	li {
@@ -436,7 +636,6 @@ a {
 #current1, #current2 {
 	max-height: 300px;
 	overflow: hidden;
-	border-bottom: 2px solid $primary;
 	margin-bottom: 25px;
 }
 
@@ -469,8 +668,11 @@ a {
 }
 
 .contact-details {
-	text-align: right;
+	text-align: center;
 	color: $pos;
+	@include break($d) {
+		text-align: right;
+	}
 	a {
 		color: $pos;
 		@include active {
@@ -479,63 +681,11 @@ a {
 	}
 }
 
-.tile {
-
+.footer-logo {
+	max-width: 250px;
+	margin: 0 auto 20px;
+	display: inherit;
 }
-
-.tile-ani
-{
-animation-name:hovering;
-animation-duration:5s;
-animation-timing-function:linear;
-animation-iteration-count:infinite;
-animation-direction:alternate;
-animation-play-state:running;
-/* Firefox: */
--moz-animation-name:hovering;
--moz-animation-duration:5s;
--moz-animation-timing-function:linear;
--moz-animation-iteration-count:infinite;
--moz-animation-direction:alternate;
--moz-animation-play-state:running;
-/* Safari and Chrome: */
--webkit-animation-name:hovering;
--webkit-animation-duration:5s;
--webkit-animation-timing-function:linear;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:alternate;
--webkit-animation-play-state:running;
-}
-
-@keyframes hovering
-{
-0% {}
-25% {}
-50% {}
-75% {}
-100% {}
-}
-
-@-moz-keyframes hovering /* Firefox */
-{
-0% {}
-25% {}
-50% {}
-75% {}
-100% {}
-}
-
-@-webkit-keyframes hovering /* Safari and Chrome */
-{
-0% {}
-25% {}
-50% {}
-75% {}
-100% {}
-}
-
-/*   END THUMB ANIMATIONS  */
-
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */

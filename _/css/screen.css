@@ -529,6 +529,8 @@ a:not(> img) {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 0;
+  top: 10px;
+  position: relative;
 }
 .lt-ie9 .pagehead #nav-toggle {
   display: none;
@@ -582,10 +584,40 @@ a:not(> img) {
   width: auto;
   margin: 0 1%;
 }
+.lt-ie9 .pagehead .nav-collapse ul li.phonecall {
+  clear: both;
+  width: 100%;
+}
+.lt-ie9 .pagehead .nav-collapse ul li small a {
+  background-color: transparent;
+  display: inline;
+  color: #c30016;
+  padding: 0;
+  margin: 0;
+}
+.lt-ie9 .pagehead .nav-collapse ul li small a:hover {
+  background-color: transparent;
+  color: #f6001c;
+}
 @media screen and (min-width: 960px) {
   .pagehead .nav-collapse ul li {
     width: auto;
     margin: 0 1%;
+  }
+  .pagehead .nav-collapse ul li.phonecall {
+    clear: both;
+    width: 100%;
+  }
+  .pagehead .nav-collapse ul li small a {
+    background-color: transparent;
+    display: inline;
+    color: #c30016;
+    padding: 0;
+    margin: 0;
+  }
+  .pagehead .nav-collapse ul li small a:hover {
+    background-color: transparent;
+    color: #f6001c;
   }
 }
 .pagehead .nav-collapse ul li a {
@@ -645,24 +677,63 @@ a:not(> img) {
 
 .main-cover {
   background: url(../img/main.jpg) no-repeat;
-  min-height: 700px;
-  position: relative;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #c30016;
-}
-.lt-ie9 .main-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: static;
+  background-position: center;
+  overflow: hidden;
+  min-height: 500px;
+  position: relative;
+  margin-bottom: 30px;
+  border-top: 5px solid #c30016;
+}
+.lt-ie9 .main-cover {
+  min-height: 700px;
+  background-attachment: fixed;
 }
 @media screen and (min-width: 420px) {
   .main-cover {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    min-height: 700px;
+    background-attachment: fixed;
   }
+}
+
+.hero-headline {
+  color: white;
+  background-color: rgba(195, 0, 22, 0.7);
+  display: inline-block;
+  padding: 15px;
+  font-weight: lighter;
+  font-family: 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif;
+  font-size: 1.5625em;
+  letter-spacing: 1px;
+  position: relative;
+  top: 165px;
+}
+.lt-ie9 .hero-headline {
+  font-size: 3.125em;
+  top: 50px;
+}
+@media screen and (min-width: 960px) {
+  .hero-headline {
+    font-size: 3.125em;
+    top: 50px;
+  }
+}
+.hero-headline:before {
+  content: "";
+  position: absolute;
+  background: rgba(195, 0, 22, 0.7);
+  /* Match the background */
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  /* some huge width */
+}
+.hero-headline:before {
+  right: 100%;
 }
 
 .editable-gallery .fancybox {
@@ -686,6 +757,7 @@ a:not(> img) {
 
 .tiles {
   display: none;
+  position: relative;
 }
 .lt-ie9 .tiles {
   display: block;
@@ -698,6 +770,206 @@ a:not(> img) {
   }
 }
 
+.tile {
+  position: absolute;
+}
+.tile.tile-1 {
+  top: 0px;
+  left: 120px;
+  z-index: 1;
+}
+.tile.tile-2 {
+  top: 120px;
+  left: 36px;
+}
+.tile.tile-3 {
+  top: 70px;
+  left: 160px;
+}
+.tile.tile-4 {
+  top: 240px;
+  left: 170px;
+}
+.tile.tile-5 {
+  top: 290px;
+  left: 33px;
+}
+.tile.tile-6 {
+  top: 430px;
+  left: 190px;
+}
+.tile.tile-7 {
+  top: 490px;
+  left: 65px;
+}
+.tile.tile-8 {
+  top: 550px;
+  left: 100px;
+}
+
+.tile-ani1 {
+  position: relative;
+  animation-name: ani1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  /* Firefox: */
+  -moz-animation-name: ani1;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-play-state: running;
+  /* Safari and Chrome: */
+  -webkit-animation-name: ani1;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+@keyframes ani1 {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 10px;
+  }
+}
+
+@-moz-keyframes ani1 {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 10px;
+  }
+}
+
+@-webkit-keyframes ani1 {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 10px;
+  }
+}
+
+.tile-ani2 {
+  position: relative;
+  animation-name: ani2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  /* Firefox: */
+  -moz-animation-name: ani2;
+  -moz-animation-duration: 2s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-play-state: running;
+  /* Safari and Chrome: */
+  -webkit-animation-name: ani2;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+@keyframes ani2 {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 5px;
+  }
+}
+
+@-moz-keyframes ani2 {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 5px;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 5px;
+  }
+}
+
+.tile-ani3 {
+  position: relative;
+  animation-name: ani3;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  /* Firefox: */
+  -moz-animation-name: ani3;
+  -moz-animation-duration: 2s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-play-state: running;
+  /* Safari and Chrome: */
+  -webkit-animation-name: ani3;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+@keyframes ani3 {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 7px;
+  }
+}
+
+@-moz-keyframes ani3 {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 7px;
+  }
+}
+
+@-webkit-keyframes ani3 {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 7px;
+  }
+}
+
+/*   END tile ANIMATIONS  */
 .typeset .btn {
   color: white;
   display: inline-block;
@@ -836,32 +1108,6 @@ a:not(> img) {
   padding-bottom: 10px;
 }
 
-.hero-headline {
-  color: white;
-  background-color: rgba(195, 0, 22, 0.7);
-  display: inline-block;
-  padding: 15px;
-  font-weight: lighter;
-  font-family: 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif;
-  font-size: 3.125em;
-  letter-spacing: 1px;
-  position: relative;
-  top: 50px;
-}
-.hero-headline:before {
-  content: "";
-  position: absolute;
-  background: rgba(195, 0, 22, 0.7);
-  /* Match the background */
-  top: 0;
-  bottom: 0;
-  width: 9999px;
-  /* some huge width */
-}
-.hero-headline:before {
-  right: 100%;
-}
-
 .typeset ul.acc {
   margin-left: 0;
 }
@@ -898,7 +1144,6 @@ a:not(> img) {
 #current1, #current2 {
   max-height: 300px;
   overflow: hidden;
-  border-bottom: 2px solid #c30016;
   margin-bottom: 25px;
 }
 
@@ -926,8 +1171,16 @@ a:not(> img) {
 }
 
 .contact-details {
-  text-align: right;
+  text-align: center;
   color: white;
+}
+.lt-ie9 .contact-details {
+  text-align: right;
+}
+@media screen and (min-width: 960px) {
+  .contact-details {
+    text-align: right;
+  }
 }
 .contact-details a {
   color: white;
@@ -936,33 +1189,12 @@ a:not(> img) {
   color: #e6e6e6;
 }
 
-.tile-ani {
-  animation-name: hovering;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-play-state: running;
-  /* Firefox: */
-  -moz-animation-name: hovering;
-  -moz-animation-duration: 5s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-direction: alternate;
-  -moz-animation-play-state: running;
-  /* Safari and Chrome: */
-  -webkit-animation-name: hovering;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-play-state: running;
+.footer-logo {
+  max-width: 250px;
+  margin: 0 auto 20px;
+  display: inherit;
 }
 
-@keyframes hovering {}
-@-moz-keyframes hovering {}
-@-webkit-keyframes hovering {}
-/*   END THUMB ANIMATIONS  */
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 .font-body, body {

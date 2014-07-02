@@ -50,8 +50,12 @@
 
 <script src="_/js/jquery.scrolly.min.js"></script>
 <script type="text/javascript">
-	$('.parallax').scrolly({bgParallax: true});
-	$('.parallax-item').scrolly();
+$(document).ready(function () {
+	if ($(window).width() > 960) {
+		$('.parallax').scrolly({bgParallax: true});
+		$('.parallax-item').scrolly();
+	}
+});
 </script>
 
 <script src="_/js/script.min.js"></script>
