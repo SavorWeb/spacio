@@ -485,6 +485,60 @@ a:not(> img) {
   word-wrap: break-word;
 }
 
+.menu-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url("../img/menu-btn.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  right: -50px;
+  top: 29px;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  display: none;
+}
+.menu-btn:hover, .menu-btn:active {
+  background-color: rgba(195, 0, 22, 0.7);
+}
+.lt-ie9 .menu-btn {
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  right: -34px;
+  top: 110px;
+  text-align: right;
+  z-index: 5;
+}
+.dropdown a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+}
+.dropdown li {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+.dropdown li:hover, .dropdown li:active {
+  background-color: rgba(195, 0, 22, 0.7);
+}
+
 .pagehead {
   background-color: transparent;
   *zoom: 1;
@@ -494,7 +548,6 @@ a:not(> img) {
   background-image: -moz-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-  overflow-x: hidden;
 }
 .pagehead .row {
   padding-top: 15px !important;
@@ -968,7 +1021,7 @@ a:not(> img) {
 }
 
 /*   END tile ANIMATIONS  */
-.typeset .btn {
+.btn {
   color: white;
   display: inline-block;
   padding: 10px;
@@ -986,7 +1039,7 @@ a:not(> img) {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.typeset .btn:after {
+.btn:after {
   content: "";
   background-color: #ccc;
   position: absolute;
@@ -1001,16 +1054,18 @@ a:not(> img) {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.typeset .btn:hover {
+.btn:hover {
+  color: white;
   top: -5px;
   left: -5px;
 }
-.typeset .btn:hover:after {
+.btn:hover:after {
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
 }
+
 .typeset p {
   margin-bottom: 25px;
 }
@@ -1139,9 +1194,52 @@ blockquote .source {
 }
 
 .portfolio-window {
-  max-height: 650px;
+  max-height: 500px;
   overflow: hidden;
   position: relative;
+}
+
+.controllers {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.lt-ie9 .controllers {
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  .controllers {
+    display: block;
+  }
+}
+.controllers:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.controllers:hover:after {
+  font-size: 5em;
+  color: #c30016;
+  font-weight: bold;
+  text-shadow: 0 0 10px white;
+}
+
+.prev {
+  left: 0;
+}
+.prev:hover:after {
+  content: "«";
+}
+
+.next {
+  right: 0;
+}
+.next:hover:after {
+  content: "»";
 }
 
 #current1, #current2 {
@@ -1151,10 +1249,18 @@ blockquote .source {
 .lt-ie9 #current1, .lt-ie9 #current2 {
   margin-bottom: 25px;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 420px) {
   #current1, #current2 {
     margin-bottom: 25px;
   }
+}
+
+.project {
+  overflow: hidden;
+  position: relative;
+}
+.project .controllers {
+  top: -15px;
 }
 
 #description-1, #description-2 {
@@ -1212,38 +1318,39 @@ blockquote .source {
   display: inherit;
 }
 
+.client {
+  position: relative;
+}
 .lt-ie9 .client {
   overflow: hidden;
+  min-height: 600px;
 }
 .lt-ie9 .client h1 {
   z-index: 5;
   position: relative;
 }
 .lt-ie9 .client .parallax-item {
-  position: relative;
+  position: absolute;
+  margin-top: 75px;
 }
-.lt-ie9 .client .client1 {
-  top: -450px;
-}
-.lt-ie9 .client .client2 {
-  top: -800px;
+.lt-ie9 .client .parallax-item img {
+  margin-top: 350px;
 }
 @media screen and (min-width: 960px) {
   .client {
     overflow: hidden;
+    min-height: 600px;
   }
   .client h1 {
     z-index: 5;
     position: relative;
   }
   .client .parallax-item {
-    position: relative;
+    position: absolute;
+    margin-top: 75px;
   }
-  .client .client1 {
-    top: -450px;
-  }
-  .client .client2 {
-    top: -800px;
+  .client .parallax-item img {
+    margin-top: 350px;
   }
 }
 

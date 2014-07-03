@@ -7,6 +7,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="initial-scale=1, user-scalable=no">
 <!-- 		<link rel="stylesheet" type="text/css" href="_/plugins/fancybox/source/jquery.fancybox.min.css"> -->
-		<link href="_/css/screen.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="_/css/screen.min.css" rel="stylesheet" type="text/css" media="all"/>
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>

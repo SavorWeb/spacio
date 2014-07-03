@@ -48,6 +48,60 @@ a {
 
 // Place your BEM/SMACSS style .scss modules in the modules folder
 
+.menu-btn {
+	background-color: transparentize($neg, 0.3);
+	background-image: url('../img/menu-btn.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	height: 70px;
+	width: 70px;
+
+	position: absolute;
+	right: -50px;
+	top: 29px;
+
+	-webkit-transition: background-color 0.1s ease-in-out;
+	-moz-transition: background-color 0.1s ease-in-out;
+	-ms-transition: background-color 0.1s ease-in-out;
+	-o-transition: background-color 0.1s ease-in-out;
+	transition: background-color 0.1s ease-in-out;
+
+	&:hover, &:active {
+		background-color: transparentize($primary, 0.3);
+	}
+	display: none;
+	@include break($d) {display: block;}
+}
+
+.dropdown {
+	position: absolute;
+	right: -34px;
+	top: 110px;
+	text-align: right;
+	z-index: 5;
+
+	a {
+		display: block;
+		color: $pos;
+		padding: 5px 10px;
+	}
+	li {
+		background-color: transparentize($neg, 0.3);
+
+		-webkit-transition: background-color 0.1s ease-in-out;
+		-moz-transition: background-color 0.1s ease-in-out;
+		-ms-transition: background-color 0.1s ease-in-out;
+		-o-transition: background-color 0.1s ease-in-out;
+		transition: background-color 0.1s ease-in-out;
+
+		&:hover, &:active {
+			background-color: transparentize($primary, 0.3);
+		}
+	}
+
+}
+
 .pagehead {
 
 	background-color: transparent;
@@ -55,7 +109,7 @@ a {
 @include filter-gradient(#ffffff, #ffffff, vertical); // IE6-9
 @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%));
 
-	overflow-x: hidden;
+	// overflow-x: hidden;
 
 	.row {
 		padding-top: 15px !important;
@@ -445,51 +499,52 @@ a {
 
 /*   END tile ANIMATIONS  */
 
-.typeset {
-
-	.btn {
+.btn {
+	color: $pos;
+	display: inline-block;
+	padding: 10px;
+	background-color: $primary;
+	position: relative;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	&:after {
+		content: "";
+		background-color: #ccc;
+		position: absolute;
+		z-index: -1;
+		top: -5px;
+		left: -5px;
+		bottom: 5px;
+		right: 5px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	}
+	&:hover {
 		color: $pos;
-		display: inline-block;
-		padding: 10px;
-		background-color: $primary;
-		position: relative;
-		margin-right: 15px;
-		margin-top: 15px;
-		margin-bottom: 10px;
-		text-transform: uppercase;
-		top: 0px;
-		left: 0px;
-		-webkit-transition: all 0.1s ease-in-out;
-		-moz-transition: all 0.1s ease-in-out;
-		-ms-transition: all 0.1s ease-in-out;
-		-o-transition: all 0.1s ease-in-out;
-		transition: all 0.1s ease-in-out;
+		top: -5px;
+		left: -5px;
 		&:after {
-			content: "";
-			background-color: #ccc;
-			position: absolute;
-			z-index: -1;
-			top: -5px;
-			left: -5px;
-			bottom: 5px;
-			right: 5px;
-		-webkit-transition: all 0.1s ease-in-out;
-		-moz-transition: all 0.1s ease-in-out;
-		-ms-transition: all 0.1s ease-in-out;
-		-o-transition: all 0.1s ease-in-out;
-		transition: all 0.1s ease-in-out;
-		}
-		&:hover {
-			top: -5px;
-			left: -5px;
-			&:after {
-				top: 0;
-				bottom: 0;
-				right: 0;
-				left: 0;
-			}
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
 		}
 	}
+}
+
+.typeset {
 	
 	p {
 		margin-bottom: 25px;
@@ -557,6 +612,7 @@ blockquote {
 	}
 }
 
+
 ////////////
 // LAYOUT //
 ////////////
@@ -619,17 +675,65 @@ blockquote {
 }
 
 .portfolio-window {
-	max-height: 650px;
+	max-height: 500px;
 	overflow: hidden;
 	position: relative;
+}
+
+.controllers {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	display: none;
+	@include break($d) {
+		display: block;
+	}
+	&:hover {
+		background-color: transparentize($pos, 0.7);
+		&:after {
+			font-size: em-font(80px);
+			color: $primary;
+			font-weight: bold;
+			text-shadow: 0 0 10px $pos;
+		}
+	}
+}
+.prev {
+	left: 0;
+	&:hover {
+		&:after {
+			content: "«";
+		}
+	}
+}
+.next {
+	right: 0;
+	&:hover {
+		&:after {
+			content: "»";
+		}
+	}
 }
 
 
 #current1, #current2 {
 	max-height: 300px;
 	overflow: hidden;
-	@include break($d) {
+	@include break($b) {
 		margin-bottom: 25px;
+	}
+}
+
+.project {
+	overflow: hidden;
+	position: relative;
+	.controllers {
+		top: -15px;
 	}
 }
 
@@ -684,20 +788,20 @@ blockquote {
 }
 
 .client {
+	position: relative;
 	@include break($d) {
 		overflow: hidden;
+		min-height: 600px;
 		h1 {
 			z-index: 5;
 			position: relative;
 		}
 		.parallax-item {
-			position: relative;
-		}
-		.client1 {
-			top: -450px;
-		}
-		.client2 {
-			top: -800px;
+			position: absolute;
+			margin-top: 75px;
+			img {
+				margin-top: 350px;
+			}
 		}
 	}
 }

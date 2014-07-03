@@ -14,14 +14,22 @@
 	// 	auto: 6000,
 	// });
 	window.mySwipe = $('.swipe').Swipe().data('Swipe');
+
 	var portfolio = new Swipe(document.getElementById('portfolio'), {
-		// auto: 10000,
+		startSlide: 7,
+		auto: 20000,
+		disableScroll: true,
+		stopPropagation: true,
 	});
 	var current1 = new Swipe(document.getElementById('current1'), {
-		// auto: 6000,
+		// auto: 19000,
+		disableScroll: true,
+		stopPropagation: true,
 	});
 	var current2 = new Swipe(document.getElementById('current2'), {
-		// auto: 8000,
+		// auto: 15000,
+		disableScroll: true,
+		stopPropagation: true,
 	});
 
 
@@ -55,9 +63,13 @@ $(document).ready(function () {
 		$('.parallax').scrolly({bgParallax: true});
 		$('.parallax-item').scrolly();
 	}
+	$('.dropdown').hide();
+	$('.menu-btn').on('click', function(){
+		$('.dropdown').slideToggle();
+	});
 });
 </script>
-
+<script src="_/js/anchor-scroll.js"></script>
 <script src="_/js/script.min.js"></script>
 
 </body>

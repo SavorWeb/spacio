@@ -45,22 +45,26 @@
 		</div>
 	</section>
 <div class="portfolio-window">
+	<button class="controllers prev" onclick='portfolio.prev()'></button> 
+  	<button class="controllers next" onclick='portfolio.next()'></button>
 	<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">
 		<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
+			<a href="media/photos/p5.jpg"><img src="media/photos/p5.jpg" alt=""></a>
 			<a href="media/photos/p6.jpg"><img src="media/photos/p6.jpg" alt=""></a>
 			<a href="media/photos/p7.jpg"><img src="media/photos/p7.jpg" alt=""></a>
 			<a href="media/photos/p8.jpg"><img src="media/photos/p8.jpg" alt=""></a>
+			<a href="media/photos/p9.jpg"><img src="media/photos/p9.jpg" alt=""></a>
+			<a href="media/photos/p10.jpg"><img src="media/photos/p10.jpg" alt=""></a>
+			<a href="media/photos/p11.jpg"><img src="media/photos/p11.jpg" alt=""></a>
+			<a href="media/photos/p12.jpg"><img src="media/photos/p12.jpg" alt=""></a>
+			<a href="media/photos/p13.jpg"><img src="media/photos/p13.jpg" alt=""></a>
+			<a href="media/photos/p14.jpg"><img src="media/photos/p14.jpg" alt=""></a>
+			<a href="media/photos/p15.jpg"><img src="media/photos/p15.jpg" alt=""></a>
 		</div>
 	</div>
 </div>
-<!-- <div style='text-align:center;padding-top:20px;'>
-  
-  <button onclick='mySwipe.prev()'>prev</button> 
-  <button onclick='mySwipe.next()'>next</button>
 
-</div> -->
-
-<section class="row typset">
+<section id="testimonials" class="row typset">
 
 	<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
 		<blockquote class="editable">
@@ -78,14 +82,16 @@
 
 <section class="row typeset">
 	<div class="colspan12-12">
-		<h2 id="projects-header" class="editable">Current Projects</h2>
+		<h2 id="projects" class="editable">Current Projects</h2>
 	</div>
-	<div class="colspan12-8 colspan6-4 as-grid">
+	<div class="project colspan12-8 colspan6-4 as-grid">
+<button class="controllers prev" onclick='current1.prev()'></button> 
+  	<button class="controllers next" onclick='current1.next()'></button>
 		<div id='current1' class='swipe'>
 			<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<a href="media/photos/p4.jpg"><img src="media/photos/p10.jpg" alt=""></a>
 				<a href="media/photos/p5.jpg"><img src="media/photos/p5.jpg" alt=""></a>
 				<a href="media/photos/p6.jpg"><img src="media/photos/p6.jpg" alt=""></a>
+				<a href="media/photos/p7.jpg"><img src="media/photos/p7.jpg" alt=""></a>
 			</div>
 		</div>
 	</div>
@@ -94,12 +100,14 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
 		<a href="#details1" class="btn">Read More</a>
 	</div>
-	<div class="colspan12-8 colspan6-4 as-grid">
+	<div class="project colspan12-8 colspan6-4 as-grid">
+<button class="controllers prev" onclick='current2.prev()'></button> 
+  	<button class="controllers next" onclick='current2.next()'></button>
 		<div id='current2' class='swipe'>
 			<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<a href="media/photos/p7.jpg"><img src="media/photos/p7.jpg" alt=""></a>
 				<a href="media/photos/p8.jpg"><img src="media/photos/p8.jpg" alt=""></a>
 				<a href="media/photos/p9.jpg"><img src="media/photos/p9.jpg" alt=""></a>
+				<a href="media/photos/p10.jpg"><img src="media/photos/p10.jpg" alt=""></a>				
 			</div>
 		</div>
 	</div>
@@ -113,16 +121,16 @@
 <div class="greybg">
 <section class="row typeset client">
 	<h1>Clients</h1>
-	<div class="parallax-item client1" data-velocity="0.3">
-		<img src="_/img/buildings1.jpg" />
+	<div class="parallax-item" data-velocity="-0.4">
+		<img src="_/img/buildings.jpg" />
 	</div>
-	<div class="parallax-item client2" data-velocity="0.3">
+<!-- 	<div class="parallax-item client2" data-velocity="0.3">
 		<img src="_/img/buildings2.jpg" />
-	</div>
+	</div> -->
 </section>
 </div>
 
-<div class="redbg parallax" data-velocity="-0.8">
+<div id="contact-us" class="redbg parallax" data-velocity="-0.8">
 	<section class="row">
 		<footer>
 			<div class="colspan12-4 as-grid">
