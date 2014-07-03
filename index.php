@@ -45,11 +45,11 @@
 		</div>
 	</section>
 <div class="portfolio-window">
-	<div id='portfolio' class='swipe parallax-item' data-velocity="-0.45">
+	<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">
 		<div id="slider-pictures" class='swipe-wrap editable-gallery' data-links="false">
-			<a href="media/photos/p1.jpg"><img src="media/photos/p1.jpg" alt=""></a>
-			<a href="media/photos/p2.jpg"><img src="media/photos/p2.jpg" alt=""></a>
-			<a href="media/photos/p3.jpg"><img src="media/photos/p3.jpg" alt=""></a>
+			<a href="media/photos/p6.jpg"><img src="media/photos/p6.jpg" alt=""></a>
+			<a href="media/photos/p7.jpg"><img src="media/photos/p7.jpg" alt=""></a>
+			<a href="media/photos/p8.jpg"><img src="media/photos/p8.jpg" alt=""></a>
 		</div>
 	</div>
 </div>
@@ -61,15 +61,18 @@
 </div> -->
 
 <section class="row typset">
-	<div class="colspan12-6 colspan6-3 as-grid editable review" id="review1">
-		<h1>Casa Costa</h1>
-		<h2>Condo Owner</h2>
-		<p>“The SPACiO Design Build team took customization to a new level. The materials and quality of their work were exquisite…from flooring to the small detail of a smoked back splash. They handled every aspect of the process, and were extremely efficient about staying in contact with me if anything needed my attention during the renovation process - and they finished prior to the estimated deadline.  SPACiO is truly in a league of its own!”</p>
+
+	<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
+		<blockquote class="editable">
+			<p class="quote">The SPACiO Design Build team took customization to a new level. The materials and quality of their work were exquisite…from flooring to the small detail of a smoked back splash. They handled every aspect of the process, and were extremely efficient about staying in contact with me if anything needed my attention during the renovation process - and they finished prior to the estimated deadline.  SPACiO is truly in a league of its own!</p>
+			<p class="source"><b>Casa Costa</b> <br>Condo Owner</p>
+		</blockquote>
 	</div>
-	<div class="colspan12-6 colspan6-3 as-grid with-gutter editable review" id="review2">
-		<h1>Inigo Ardid</h1>
-		<h2>Vice President, Key International</h2>
-		<p>“From the onset of our relationship, it was obvious that the SPACiO team was highly professional, and extensively qualified to deliver what we needed. At The Ivy, Mint, and Eden House, they built an in-house Design Center and integrated seamlessly with our Sales Team to serve new buyers and existing owners with their build out needs. They efficiently completed more than 600 build-outs, and the results far exceeded all expectations. We truly consider them a trusted, invaluable partner.”</p>
+	<div class="colspan12-6 colspan6-3 as-grid with-gutter review" id="review2">
+		<blockquote class="editable">
+			<p class="quote">From the onset of our relationship, it was obvious that the SPACiO team was highly professional, and extensively qualified to deliver what we needed. At The Ivy, Mint, and Eden House, they built an in-house Design Center and integrated seamlessly with our Sales Team to serve new buyers and existing owners with their build out needs. They efficiently completed more than 600 build-outs, and the results far exceeded all expectations. We truly consider them a trusted, invaluable partner.</p>
+			<p class="source"><b>Inigo Ardid</b> <br>Vice President, Key International</p>
+		</blockquote>
 	</div>
 </section>
 
@@ -87,7 +90,7 @@
 		</div>
 	</div>
 	<div class="colspan12-4 colspan6-2 as-grid with-gutter editable" id="description-1">
-		<h4>Project title</h4>
+		<h5>Project title</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
 		<a href="#details1" class="btn">Read More</a>
 	</div>
@@ -101,54 +104,21 @@
 		</div>
 	</div>
 	<div class="colspan12-4 colspan6-2 as-grid with-gutter editable" id="description-2">
-		<h4>Project title</h4>
+		<h5>Project title</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
 		<a href="#details2" class="btn">Read More</a>
 	</div>
 </section>
 
 <div class="greybg">
-<section class="row typeset">
+<section class="row typeset client">
 	<h1>Clients</h1>
-	<img src="_/img/buildings.jpg" />
-	<!-- <div class="gutter-grid">
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
+	<div class="parallax-item client1" data-velocity="0.3">
+		<img src="_/img/buildings1.jpg" />
 	</div>
-
-	<div class="gutter-grid">
-		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-		<div class="colspan12-3 colspan8-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-	</div>	
-
-	<div class="gutter-grid">
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-		<div class="colspan12-4 colspan6-2 as-grid with-gutter">
-			<img src="http://www.placehold.it/400x300" alt="">
-		</div>
-	</div>	 -->
+	<div class="parallax-item client2" data-velocity="0.3">
+		<img src="_/img/buildings2.jpg" />
+	</div>
 </section>
 </div>
 
@@ -165,7 +135,7 @@
 				</p>
 				<p>
 					email: <a href="mailto:info@spaciodb.com">info@spaciodb.com</a> <br>
-					fax: <a href="tel:3057048665">+1 305.704.8665</a>
+					fax: +1 305.704.8665
 				</p>
 				<p>
 					175 SW 7th St. Suite 2111 <br>
@@ -176,28 +146,7 @@
 	</section>
 </div>
 
-<!-- <section class="row typeset">
-
-	<h2>Heading 2</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis, dolore, quos, numquam facilis voluptatum consectetur minima alias molestiae libero quibusdam rem error adipisci dolorem repellat accusamus dignissimos doloribus et!</p>
-	<a href="#modal" class="btn">Modal!</a>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, tempora, similique pariatur quo nostrum quia nam quaerat impedit optio commodi iste delectus nihil hic minus dolorum possimus sunt maxime dicta.</p>
-	<h3>Heading 3</h3>
-	<blockquote>
-		<p class="quote">The only thing worse than being blind, is having sight, and no vision.</p>
-		<p class="source">Anonymous</p>
-	</blockquote>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, a non hic nam repellat dolorem voluptatum vero nihil quas beatae consequuntur eligendi et ipsum recusandae vitae magnam laborum laboriosam amet.</p>
-	<h4>Heading 4</h4>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quae iure eius enim praesentium quia doloremque. Modi, molestias, nisi, cumque pariatur sint quaerat ullam recusandae reprehenderit eos dolores perferendis quidem.</p>
-	<ul>
-		<li>Things</li>
-		<li>Things</li>
-		<li>Things</li>
-	</ul>
-
-</section> -->
+<!-- //////   BEGIN MODALS    ////// -->
 
 	<div class="remodal typeset" data-remodal-id="leadership">
 		<h1>Leadership</h1>

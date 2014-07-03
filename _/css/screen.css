@@ -580,6 +580,18 @@ a:not(> img) {
   margin: 0;
   list-style-type: none;
 }
+.pagehead .nav-collapse ul li small a {
+  background-color: transparent;
+  display: block;
+  color: #c30016;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 1.5625em;
+}
+.pagehead .nav-collapse ul li small a:hover {
+  background-color: transparent;
+  color: #f6001c;
+}
 .lt-ie9 .pagehead .nav-collapse ul li {
   width: auto;
   margin: 0 1%;
@@ -589,15 +601,8 @@ a:not(> img) {
   width: 100%;
 }
 .lt-ie9 .pagehead .nav-collapse ul li small a {
-  background-color: transparent;
+  font-size: 0.9375em;
   display: inline;
-  color: #c30016;
-  padding: 0;
-  margin: 0;
-}
-.lt-ie9 .pagehead .nav-collapse ul li small a:hover {
-  background-color: transparent;
-  color: #f6001c;
 }
 @media screen and (min-width: 960px) {
   .pagehead .nav-collapse ul li {
@@ -609,15 +614,8 @@ a:not(> img) {
     width: 100%;
   }
   .pagehead .nav-collapse ul li small a {
-    background-color: transparent;
+    font-size: 0.9375em;
     display: inline;
-    color: #c30016;
-    padding: 0;
-    margin: 0;
-  }
-  .pagehead .nav-collapse ul li small a:hover {
-    background-color: transparent;
-    color: #f6001c;
   }
 }
 .pagehead .nav-collapse ul li a {
@@ -1065,28 +1063,28 @@ a:not(> img) {
     width: 40%;
   }
 }
-.typeset blockquote {
-  width: 100%;
+
+blockquote {
   margin-bottom: 10px;
   padding: 4%;
-  clear: both;
-  background-color: white;
-  border: 1px solid #bbbbbb;
   border-bottom-width: 8px;
   color: black;
+  font-size: 26px;
 }
-.typeset blockquote .quote {
+blockquote .quote {
   font-size: 0.625em;
   font-style: normal !important;
 }
-.typeset blockquote .quote:before {
+blockquote .quote:before {
   content: "“ ";
 }
-.typeset blockquote .quote:after {
+blockquote .quote:after {
   content: " ”";
 }
-.typeset blockquote .source {
-  font-size: 0.375em;
+blockquote .source {
+  color: #c30016;
+  font-size: 0.5em;
+  margin-top: 10px;
 }
 
 .row {
@@ -1103,6 +1101,11 @@ a:not(> img) {
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 1px solid black;
+  font-size: 32px !important;
+  padding-right: 45px;
+}
+.remodal h4 {
+  font-size: 24px !important;
 }
 .remodal p {
   padding-bottom: 10px;
@@ -1136,7 +1139,7 @@ a:not(> img) {
 }
 
 .portfolio-window {
-  max-height: 500px;
+  max-height: 650px;
   overflow: hidden;
   position: relative;
 }
@@ -1144,9 +1147,23 @@ a:not(> img) {
 #current1, #current2 {
   max-height: 300px;
   overflow: hidden;
+}
+.lt-ie9 #current1, .lt-ie9 #current2 {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 960px) {
+  #current1, #current2 {
+    margin-bottom: 25px;
+  }
+}
+
+#description-1, #description-2 {
   margin-bottom: 25px;
 }
 
+.review {
+  margin-bottom: 20px;
+}
 .review h1 {
   font-size: 20px;
   color: #c30016;
@@ -1193,6 +1210,41 @@ a:not(> img) {
   max-width: 250px;
   margin: 0 auto 20px;
   display: inherit;
+}
+
+.lt-ie9 .client {
+  overflow: hidden;
+}
+.lt-ie9 .client h1 {
+  z-index: 5;
+  position: relative;
+}
+.lt-ie9 .client .parallax-item {
+  position: relative;
+}
+.lt-ie9 .client .client1 {
+  top: -450px;
+}
+.lt-ie9 .client .client2 {
+  top: -800px;
+}
+@media screen and (min-width: 960px) {
+  .client {
+    overflow: hidden;
+  }
+  .client h1 {
+    z-index: 5;
+    position: relative;
+  }
+  .client .parallax-item {
+    position: relative;
+  }
+  .client .client1 {
+    top: -450px;
+  }
+  .client .client2 {
+    top: -800px;
+  }
 }
 
 /* ::Import styles */
@@ -1322,8 +1374,18 @@ form .btn {
 }
 
 .as-heading__largest, .typeset h1 {
+  font-size: 2em;
+  line-height: 1.2375em;
+}
+.lt-ie9 .as-heading__largest, .lt-ie9 .typeset h1, .typeset .lt-ie9 h1 {
   font-size: 2.625em;
   line-height: 1.152381em;
+}
+@media screen and (min-width: 960px) {
+  .as-heading__largest, .typeset h1 {
+    font-size: 2.625em;
+    line-height: 1.152381em;
+  }
 }
 
 .as-heading__large, .typeset h2 {

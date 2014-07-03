@@ -122,6 +122,19 @@ a {
 				margin: 0;
 				list-style-type: none;
 
+				small a {
+					background-color: transparent;
+					display: block;
+					color: $primary;
+					padding: 0;
+					margin: 10px 0 0;
+					font-size: em-font(25px);
+					&:hover {
+						background-color: transparent;
+						color: lighten($primary, 10%);
+					}
+				}
+
 				@include break($d) {
 					width: auto;
 					margin: 0 1%;
@@ -130,15 +143,8 @@ a {
 						width: 100%;
 					}
 					small a {
-						background-color: transparent;
+						font-size: em-font(15px);
 						display: inline;
-						color: $primary;
-						padding: 0;
-						margin: 0;
-						&:hover {
-							background-color: transparent;
-							color: lighten($primary, 10%);
-						}
 					}
 				}
 
@@ -196,12 +202,6 @@ a {
 
 .main-cover {
 	background: url(../img/main.jpg) no-repeat; 
-	// -webkit-transition: all 0s ease-in-out;
-	// -moz-transition: all 0s ease-in-out;
-	// -ms-transition: all 0s ease-in-out;
-	// -o-transition: all 0s ease-in-out;
-	// transition: all 0s ease-in-out;
-	// background-position: -600px -50px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -219,16 +219,7 @@ a {
 	@include break($b) {
 		min-height: 700px;
 		background-attachment: fixed;
-		//background-position: center -60px;
 	}
-	// .row-bottom {
-	// 	position: relative;
-	// 	width: 100%;
-	// 	@include break($b) {
-	// 		bottom: 20px;
-	// 		position: absolute;
-	// 	}
-	// }
 }
 
 .hero-headline {
@@ -255,10 +246,6 @@ a {
 	  top: 0;
 	  bottom: 0;
 	  width: 9999px;   /* some huge width */
-	  // margin-right: -20px;
-	  // @include break($c) {
-	  // 	margin-right: -40px;
-	  // }
 	} 
 	&:before {
 	  right: 100%;
@@ -542,34 +529,34 @@ a {
 			width: 40%;
 		}
 	}
+}
 
-	blockquote {
-	
-		width: 100%;
-		margin-bottom: 10px;
-	
-		padding: 4%;
-		clear: both;
-		background-color: lighten($secondary, 30%);
-		border: 1px solid $secondary;
-		border-bottom-width: 8px;
-		// box-shadow: 0 2px 5px rgba(0,0,0,0.1);	
-		color: $neg;
-		.quote {
-			font-size: em-font(10px);
-			font-style: normal !important;
-			&:before {
-				content: "“ ";
-			}
-			&:after {
-				content: " ”";	
-			}
+
+blockquote {
+	margin-bottom: 10px;
+	padding: 4%;
+	//background-color: lighten($secondary, 25%);
+	//border: 1px solid $primary;
+	border-bottom-width: 8px;
+	color: $neg;
+	font-size: $size4;
+	.quote {
+		font-size: em-font(10px);
+		font-style: normal !important;
+		&:before {
+			content: "“ ";
 		}
-		.source {
-			font-size: em-font(6px);
+		&:after {
+			content: " ”";	
 		}
 	}
+	.source {
+		color: $primary;
+		font-size: em-font(8px);
+		margin-top: 10px;
+	}
 }
+
 ////////////
 // LAYOUT //
 ////////////
@@ -589,6 +576,11 @@ a {
 		padding-bottom: 15px;
 		margin-bottom: 15px;
 		border-bottom: 1px solid $neg;
+		font-size: $size2 !important;
+		padding-right: 45px;
+	}
+	h4 {
+		font-size: $size5 !important;	
 	}
 	p {
 		padding-bottom: 10px;
@@ -627,7 +619,7 @@ a {
 }
 
 .portfolio-window {
-	max-height: 500px;
+	max-height: 650px;
 	overflow: hidden;
 	position: relative;
 }
@@ -636,10 +628,17 @@ a {
 #current1, #current2 {
 	max-height: 300px;
 	overflow: hidden;
+	@include break($d) {
+		margin-bottom: 25px;
+	}
+}
+
+#description-1, #description-2 {
 	margin-bottom: 25px;
 }
 
 .review {
+	margin-bottom: 20px;
 	h1 {
 		font-size: $size6;
 		color: $primary;
@@ -661,10 +660,7 @@ a {
 .redbg {
 	background-color: $primary;
 	background-image: url('../img/darkcut-p.png');
-	// background-repeat: no-repeat;
 	background-size: 100%;
-	// background-size: 100% 100%;
-	// background-position: center center;
 }
 
 .contact-details {
@@ -685,6 +681,25 @@ a {
 	max-width: 250px;
 	margin: 0 auto 20px;
 	display: inherit;
+}
+
+.client {
+	@include break($d) {
+		overflow: hidden;
+		h1 {
+			z-index: 5;
+			position: relative;
+		}
+		.parallax-item {
+			position: relative;
+		}
+		.client1 {
+			top: -450px;
+		}
+		.client2 {
+			top: -800px;
+		}
+	}
 }
 
 /* ::Import styles */
