@@ -58,15 +58,23 @@
 
 <script src="_/js/jquery.scrolly.min.js"></script>
 <script type="text/javascript">
+
+$('.dropdown').hide();
+
 $(document).ready(function () {
-	if ($(window).width() > 960) {
-		$('.parallax').scrolly({bgParallax: true});
-		$('.parallax-item').scrolly();
-	}
-	$('.dropdown').hide();
 	$('.menu-btn').on('click', function(){
 		$('.dropdown').slideToggle();
 	});
+
+	    // Don't execute if we're in the Live Editor
+    if ( window.isCMS ) {
+
+    } else {
+		if ($(window).width() > 960) {
+			$('.parallax').scrolly({bgParallax: true});
+			$('.parallax-item').scrolly();
+		}
+    }
 });
 </script>
 <script src="_/js/anchor-scroll.js"></script>

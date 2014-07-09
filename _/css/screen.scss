@@ -102,12 +102,21 @@ a {
 
 }
 
+#call-now {
+	text-shadow: 0 0 5px $pos;
+}
+
 .pagehead {
 
-	background-color: transparent;
-// needs latest Compass, add '@import "compass"' to your scss
-@include filter-gradient(#ffffff, #ffffff, vertical); // IE6-9
-@include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%));
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
 
 	// overflow-x: hidden;
 
@@ -260,7 +269,7 @@ a {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-attachment: static;
+	background-attachment: scroll;
 	background-position: center;
 
 	overflow: hidden;
@@ -274,6 +283,10 @@ a {
 		min-height: 700px;
 		background-attachment: fixed;
 	}
+}
+
+.is-cms .main-cover {
+	@include break($b) {background-attachment: scroll;}
 }
 
 .hero-headline {
@@ -570,7 +583,6 @@ a {
 		width: 100%;
 	}
 	.right {
-
 		@include break($b) {
 			float: right;
 			margin: 0 0 15px 30px;
@@ -596,8 +608,8 @@ blockquote {
 	color: $neg;
 	font-size: $size4;
 	.quote {
-		font-size: em-font(10px);
-		font-style: normal !important;
+		font-size: em-font(9px);
+		font-style: italic !important;
 		&:before {
 			content: "“ ";
 		}
@@ -753,8 +765,9 @@ blockquote {
 	}
 }
 
-.feature {
-	margin-bottom: 50px;
+.btn-wrap {
+	margin-bottom: 20px;
+	@include break($d) {margin-bottom: 50px;}
 }
 
 .greybg {
@@ -765,6 +778,7 @@ blockquote {
 	background-color: $primary;
 	background-image: url('../img/darkcut-p.png');
 	background-size: 100%;
+	background-position: center center;
 }
 
 .contact-details {
@@ -791,19 +805,44 @@ blockquote {
 	position: relative;
 	@include break($d) {
 		overflow: hidden;
-		min-height: 600px;
+		max-height: 600px;
 		h1 {
 			z-index: 5;
 			position: relative;
 		}
 		.parallax-item {
-			position: absolute;
-			margin-top: 75px;
+			position: relative;
+			
 			img {
-				margin-top: 350px;
+				margin-top: 100px; //425
 			}
 		}
 	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.client .parallax-item img {
+		margin-top: 350px;
+	}
+}
+
+.is-cms .parallax-item {
+	margin-top: 0;
+	img {
+		margin-top: -30px;
+	}
+}
+
+.is-cms .remodal-overlay {
+	opacity: 1 !important;
+	display: block !important;
+	position: static !important;
+}
+
+#testimony-header {
+	font-size: 1.625em;
+	color: $neg;
+	text-transform: uppercase;
 }
 
 /* ::Import styles */
