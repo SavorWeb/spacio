@@ -16,7 +16,7 @@
 
 		<button class="menu-btn"></button>
 		<ul class="dropdown">
-			<li><a href="#features">About us</a></li>
+			<li><a href="#feature1">About us</a></li>
 			<li><a href="#portfolio">Our Work</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#projects">Current Projects</a></li>
