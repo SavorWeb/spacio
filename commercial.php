@@ -21,7 +21,7 @@
 		</div>
 	</div>
 
-	<section class="row">
+	<section class="row" id="showHere">
 		<div class="colspan12-7 as-grid typeset top-articles">
 			<div id="feature1" class="editable">
 				<h1>Philosophy</h1>
@@ -92,7 +92,7 @@
 	</div>
 </section>
 
-<section class="row typeset">
+<section id="current-projects" class="row typeset">
 	<div class="colspan12-12">
 		<h2 id="projects" class="editable">Current Projects</h2>
 	</div>

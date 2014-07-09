@@ -16,11 +16,25 @@
 
 		<button class="menu-btn"></button>
 		<ul class="dropdown">
-			<li><a href="#feature1">About us</a></li>
+			<li><a href="#showHere">About us</a></li>
 			<li><a href="#portfolio">Our Work</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
-			<li><a href="#projects">Current Projects</a></li>
+			<li><a href="#current-projects">Current Projects</a></li>
 			<li><a href="#contact-us">Contact</a></li>
 		</ul>
 	</div>
 </header>
+
+
+<nav class="banner banner--clone">
+	<div class="row">
+		<div class="logomark"><a href="/spacio/"><img src="_/img/logomark.png" alt=""></a></div>
+		<ul>
+			<li><a href="#showHere">About us</a></li>
+			<li><a href="#portfolio">Our Work</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#current-projects">Current Projects</a></li>
+			<li><a href="#contact-us">Contact</a></li>
+		</ul>
+	</div>
+</nav>

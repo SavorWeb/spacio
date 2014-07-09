@@ -526,30 +526,6 @@ a:not(> img) {
   }
 }
 
-.dropdown {
-  position: absolute;
-  right: -34px;
-  top: 110px;
-  text-align: right;
-  z-index: 5;
-}
-.dropdown a {
-  display: block;
-  color: white;
-  padding: 5px 10px;
-}
-.dropdown li {
-  background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: background-color 0.1s ease-in-out;
-  -moz-transition: background-color 0.1s ease-in-out;
-  -ms-transition: background-color 0.1s ease-in-out;
-  -o-transition: background-color 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out;
-}
-.dropdown li:hover, .dropdown li:active {
-  background-color: rgba(195, 0, 22, 0.7);
-}
-
 #call-now {
   text-shadow: 0 0 5px white;
 }
@@ -571,6 +547,29 @@ a:not(> img) {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
   /* IE6-8 */
+}
+.pagehead .dropdown {
+  position: absolute;
+  right: -34px;
+  top: 110px;
+  text-align: right;
+  z-index: 5;
+}
+.pagehead .dropdown a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+}
+.pagehead .dropdown li {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+.pagehead .dropdown li:hover, .pagehead .dropdown li:active {
+  background-color: rgba(195, 0, 22, 0.7);
 }
 .pagehead .row {
   padding-top: 15px !important;
@@ -747,6 +746,76 @@ a:not(> img) {
   .pagehead .nav-collapse ul li a {
     margin-top: 5px;
   }
+}
+
+.logomark {
+  width: 100px;
+  margin-top: 3px;
+  float: left;
+}
+.logomark img {
+  max-width: 100%;
+}
+
+.banner {
+  background-color: rgba(195, 0, 22, 0.95);
+  width: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  display: none;
+  font-size: 12px;
+}
+.lt-ie9 .banner {
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  .banner {
+    display: block;
+  }
+}
+.banner .row {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.banner ul {
+  float: right;
+}
+.banner ul li {
+  float: left;
+}
+
+.banner li a {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+}
+
+.banner li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner--clone {
+  /* Required styles */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Translate -100% to move off screen */
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  /* Animations */
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.banner--stick {
+  /* Translate back to 0%; */
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .main-cover {
