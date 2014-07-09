@@ -1463,10 +1463,16 @@ blockquote .source {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .lt-ie9 .client .parallax-item img {
+    margin-top: 350px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 960px) {
   .client .parallax-item img {
     margin-top: 350px;
   }
 }
+
 .is-cms .parallax-item {
   margin-top: 0;
 }

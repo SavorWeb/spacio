@@ -17,7 +17,7 @@
 		<button class="menu-btn"></button>
 		<ul class="dropdown">
 			<li><a href="#showHere">About us</a></li>
-			<li><a href="#portfolio">Our Work</a></li>
+			<li><a href="#our-work">Our Work</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#current-projects">Current Projects</a></li>
 			<li><a href="#contact-us">Contact</a></li>
@@ -31,7 +31,7 @@
 		<div class="logomark"><a href="/spacio/"><img src="_/img/logomark.png" alt=""></a></div>
 		<ul>
 			<li><a href="#showHere">About us</a></li>
-			<li><a href="#portfolio">Our Work</a></li>
+			<li><a href="#our-work">Our Work</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#current-projects">Current Projects</a></li>
 			<li><a href="#contact-us">Contact</a></li>

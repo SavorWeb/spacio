@@ -54,7 +54,7 @@
 			</div>
 		</div>
 	</section>
-<div class="portfolio-window">
+<div id="our-work" class="portfolio-window">
 	<button class="controllers prev" onclick='portfolio.prev()'></button> 
   	<button class="controllers next" onclick='portfolio.next()'></button>
 	<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">

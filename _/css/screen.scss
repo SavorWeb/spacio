@@ -895,7 +895,7 @@ blockquote {
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.client .parallax-item img {
-		margin-top: 350px;
+		@include break($d) {margin-top: 350px;}
 	}
 }
 
