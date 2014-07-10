@@ -10,12 +10,11 @@
 	<div class="main-cover parallax" data-velocity="-0.5">
 		<?php include("_/inc/nav.php"); ?>
 
-		<div class="row">
+		<div id="showHere" class="row">
 			<h1 class="hero-headline editable" id="the-hero-headline">DISTINCTION,<br />DONE RIGHT.</h1>
 		</div>
 	</div>
-
-	<section class="row" id="showHere">
+	<section id="about-us" class="row">
 		<div class="colspan12-7 as-grid typeset top-articles">
 			<div id="feature1" class="editable">
 				<h1>Philosophy</h1>

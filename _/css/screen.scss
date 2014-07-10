@@ -258,6 +258,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 }
 
+#about-us {
+	@include break($d) {
+		padding-top: 75px;
+		position: relative;
+		top: -30px;
+	}
+}
+
 .logomark {
 	width: 100px;
 	margin-top: 3px;

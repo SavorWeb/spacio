@@ -1,4 +1,4 @@
-<header role="banner" class="pagehead pullwidth">
+<header id="top" role="banner" class="pagehead pullwidth">
 	<div class="row">
 		<a class="logo" href="/spacio/"><img class="editable" id="main-logo" src="_/img/logo.png" alt=""></a>
 
@@ -16,7 +16,7 @@
 
 		<button class="menu-btn"></button>
 		<ul class="dropdown">
-			<li><a href="#showHere">About us</a></li>
+			<li><a href="#about-us">About us</a></li>
 			<li><a href="#our-work">Our Work</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#current-projects">Current Projects</a></li>
@@ -28,9 +28,9 @@
 
 <nav class="banner banner--clone">
 	<div class="row">
-		<div class="logomark"><a href="/spacio/"><img src="_/img/logomark.png" alt=""></a></div>
+		<div class="logomark"><a href="#top"><img src="_/img/logomark.png" alt=""></a></div>
 		<ul>
-			<li><a href="#showHere">About us</a></li>
+			<li><a href="#about-us">About us</a></li>
 			<li><a href="#our-work">Our Work</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#current-projects">Current Projects</a></li>

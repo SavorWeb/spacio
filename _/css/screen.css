@@ -748,6 +748,19 @@ a:not(> img) {
   }
 }
 
+.lt-ie9 #about-us {
+  padding-top: 75px;
+  position: relative;
+  top: -30px;
+}
+@media screen and (min-width: 960px) {
+  #about-us {
+    padding-top: 75px;
+    position: relative;
+    top: -30px;
+  }
+}
+
 .logomark {
   width: 100px;
   margin-top: 3px;
