@@ -4,6 +4,12 @@
 <meta name="description" content="South Florida Interior Design" />
 <meta name="keywords" content="South Florida, Interior Design, Build, Spacio, Design Build, Design, Tile, Kitchen, Countertops, Quality, Contractor, Vision, paint, trim, backsplash, flooring" />
 
+<style>
+	.condo-link {
+		border-bottom: 3px solid rgba(195,0,22,.7);
+	}
+</style>
+
 </head>
 <body>
 
@@ -49,98 +55,118 @@
 			</div>
 		</div>
 	</section>
-<div id="our-work" class="portfolio-window">
-	<button class="controllers prev" onclick='portfolio.prev()'></button> 
-  	<button class="controllers next" onclick='portfolio.next()'></button>
-	<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">
-		<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
-			<li><img src="media/photos/p5.jpg" alt=""></li>
-			<li><img src="media/photos/p6.jpg" alt=""></li>
-			<li><img src="media/photos/p7.jpg" alt=""></li>
-			<li><img src="media/photos/p8.jpg" alt=""></li>
-			<li><img src="media/photos/p9.jpg" alt=""></li>
-			<li><img src="media/photos/p10.jpg" alt=""></li>
-			<li><img src="media/photos/p11.jpg" alt=""></li>
-			<li><img src="media/photos/p12.jpg" alt=""></li>
-			<li><img src="media/photos/p13.jpg" alt=""></li>
-			<li><img src="media/photos/p14.jpg" alt=""></li>
-			<li><img src="media/photos/p15.jpg" alt=""></li>
-		</ul>
-	</div>
-</div>
-
-<section id="testimonials" class="row typset">
-	<div class="colspan12-12">
-		<h2 id="testimony-header" class="editable">Why choose Spacio</h2>
-	</div>
-	<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
-		<blockquote class="editable">
-			<p class="quote">The SPACiO Design Build team took customization to a new level. The materials and quality of their work were exquisite…from flooring to the small detail of a smoked back splash. They handled every aspect of the process, and were extremely efficient about staying in contact with me if anything needed my attention during the renovation process - and they finished prior to the estimated deadline.  SPACiO is truly in a league of its own!</p>
-			<p class="source"><b>Casa Costa</b> <br>Condo Owner</p>
-		</blockquote>
-	</div>
-	<div class="colspan12-6 colspan6-3 as-grid with-gutter review" id="review2">
-		<blockquote class="editable">
-			<p class="quote">From the onset of our relationship, it was obvious that the SPACiO team was highly professional, and extensively qualified to deliver what we needed. At The Ivy, Mint, and Eden House, they built an in-house Design Center and integrated seamlessly with our Sales Team to serve new buyers and existing owners with their build out needs. They efficiently completed more than 600 build-outs, and the results far exceeded all expectations. We truly consider them a trusted, invaluable partner.</p>
-			<p class="source"><b>Inigo Ardid</b> <br>Vice President, Key International</p>
-		</blockquote>
-	</div>
-</section>
-
-<section id="current-projects" class="row typeset">
-	<div class="colspan12-12">
-		<h2 id="projects" class="editable">Current Projects</h2>
-	</div>
-	<div class="project colspan12-8 colspan6-4 as-grid">
-<button class="controllers prev" onclick='current1.prev()'></button> 
-  	<button class="controllers next" onclick='current1.next()'></button>
-		<div id='current1' class='swipe'>
-			<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="media/photos/p5.jpg" alt=""></li>
-				<li><img src="media/photos/p6.jpg" alt=""></li>
-				<li><img src="media/photos/p7.jpg" alt=""></li>
-			</ul>
+	<div id="our-portfolio">
+		<section class="row typset">
+			<div class="colspan12-10 as-grid">
+				<h2 class="editable section-head">Portfolio</h2>
+				<p>Take a moment and browse through a few examples of our work.</p>
+			</div>
+			<div class="colspan12-2 as-grid next-prev">
+				<button class="prev" onclick='portfolio.prev()'>«</button> 
+				<button class="next" onclick='portfolio.next()'>»</button>
+			</div>
+		</section>
+		<div id="our-work" class="portfolio-window">
+			<button class="controllers prev" onclick='portfolio.prev()'></button> 
+			<button class="controllers next" onclick='portfolio.next()'></button>
+			<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">
+				<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
+					<li><img src="media/photos/p5.jpg" alt=""></li>
+					<li><img src="media/photos/p6.jpg" alt=""></li>
+					<li><img src="media/photos/p7.jpg" alt=""></li>
+					<li><img src="media/photos/p8.jpg" alt=""></li>
+					<li><img src="media/photos/p9.jpg" alt=""></li>
+					<li><img src="media/photos/p10.jpg" alt=""></li>
+					<li><img src="media/photos/p11.jpg" alt=""></li>
+					<li><img src="media/photos/p12.jpg" alt=""></li>
+					<li><img src="media/photos/p13.jpg" alt=""></li>
+					<li><img src="media/photos/p14.jpg" alt=""></li>
+					<li><img src="media/photos/p15.jpg" alt=""></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-1">
-		<div id="descript1" class="editable">
-			<h5>Project title</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
+	<div id="testimonials" class="greybg">
+		<section class="row typset">
+			<div class="colspan12-12">
+				<h2 id="testimony-header" class="editable section-head">Why choose Spacio</h2>
+			</div>
+			<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
+				<blockquote class="editable">
+					<p class="quote">The SPACiO Design Build team took customization to a new level. The materials and quality of their work were exquisite…from flooring to the small detail of a smoked back splash. They handled every aspect of the process, and were extremely efficient about staying in contact with me if anything needed my attention during the renovation process - and they finished prior to the estimated deadline.  SPACiO is truly in a league of its own!</p>
+					<p class="source"><b>Casa Costa</b> <br>Condo Owner</p>
+				</blockquote>
+			</div>
+			<div class="colspan12-6 colspan6-3 as-grid with-gutter review" id="review2">
+				<blockquote class="editable">
+					<p class="quote">From the onset of our relationship, it was obvious that the SPACiO team was highly professional, and extensively qualified to deliver what we needed. At The Ivy, Mint, and Eden House, they built an in-house Design Center and integrated seamlessly with our Sales Team to serve new buyers and existing owners with their build out needs. They efficiently completed more than 600 build-outs, and the results far exceeded all expectations. We truly consider them a trusted, invaluable partner.</p>
+					<p class="source"><b>Inigo Ardid</b> <br>Vice President, Key International</p>
+				</blockquote>
+			</div>
+		</section>
+	</div>
+	<section id="current-projects" class="row typeset">
+		<div class="colspan12-12">
+			<h2 id="projects" class="editable">Current Projects</h2>
 		</div>
-		<a href="#details1" class="btn">Read More</a>
-	</div>
-	<div class="project colspan12-8 colspan6-4 as-grid">
-<button class="controllers prev" onclick='current2.prev()'></button> 
-  	<button class="controllers next" onclick='current2.next()'></button>
-		<div id='current2' class='swipe'>
-			<ul id="slider-pictures2" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="media/photos/p8.jpg" alt=""></li>
-				<li><img src="media/photos/p9.jpg" alt=""></li>
-				<li><img src="media/photos/p10.jpg" alt=""></li>				
-			</ul>
+		<div class="project colspan12-8 colspan6-4 as-grid">
+			<button class="controllers prev" onclick='current1.prev()'></button> 
+			<button class="controllers next" onclick='current1.next()'></button>
+			<div id='current1' class='swipe'>
+				<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
+					<li><img src="media/photos/p5.jpg" alt=""></li>
+					<li><img src="media/photos/p6.jpg" alt=""></li>
+					<li><img src="media/photos/p7.jpg" alt=""></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-2">
-		<div id="descript2" class="editable">
-			<h5>Project title</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
+		<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-1">
+			<div id="descript1" class="editable">
+				<h5>Project title</h5>
+			<div class="next-prev">
+				<button class="prev" onclick='current1.prev()'>«</button> 
+				<button class="next" onclick='current1.next()'>»</button>
+			</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
+			</div>
+			<a href="#details1" class="btn">Read More</a>
 		</div>
-		<a href="#details2" class="btn">Read More</a>
+		<div class="project colspan12-8 colspan6-4 as-grid">
+			<button class="controllers prev" onclick='current2.prev()'></button> 
+			<button class="controllers next" onclick='current2.next()'></button>
+			<div id='current2' class='swipe'>
+				<ul id="slider-pictures2" class='swipe-wrap editable-gallery' data-links="false">
+					<li><img src="media/photos/p8.jpg" alt=""></li>
+					<li><img src="media/photos/p9.jpg" alt=""></li>
+					<li><img src="media/photos/p10.jpg" alt=""></li>				
+				</ul>
+			</div>
+		</div>
+		<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-2">
+			<div id="descript2" class="editable">
+				<h5>Project title</h5>
+			<div class="next-prev">
+				<button class="prev" onclick='current2.prev()'>«</button> 
+				<button class="next" onclick='current2.next()'>»</button>
+			</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
+			</div>
+			<a href="#details2" class="btn">Read More</a>
+		</div>
+	</section>
+
+	<div id="clients" class="greybg">
+		<section class="row typeset client">
+			<h1 class="editable" id="client-header">Clients</h1>
+			<div class="parallax-item" data-velocity="-0.4">
+				<img class="editable" id="client-image" src="_/img/buildings.jpg" />
+			</div>
+		</section>
 	</div>
-</section>
 
-<div class="greybg">
-<section class="row typeset client">
-	<h1 class="editable" id="client-header">Clients</h1>
-	<div class="parallax-item" data-velocity="-0.4">
-		<img class="editable" id="client-image" src="_/img/buildings.jpg" />
-	</div>
-</section>
-</div>
+	<?php include("_/inc/contact.php"); ?>
 
-<?php include("_/inc/contact.php"); ?>
-
-<!-- //////   BEGIN MODALS    ////// -->
+	<!-- //////   BEGIN MODALS    ////// -->
 
 	<div class="remodal typeset" data-remodal-id="leadership">
 		<h1 id="lead-header" class="editable">Leadership</h1>
@@ -198,28 +224,28 @@
 		<h1>Project Title 1</h1>
 		<img class="right" src="http://www.placehold.it/400x300">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
 
-	<div class="remodal typeset editable" id="project2-modal" data-remodal-id="details2">
-		<h1>Project Title 2</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<img src="http://www.placehold.it/400x300">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
+		<div class="remodal typeset editable" id="project2-modal" data-remodal-id="details2">
+			<h1>Project Title 2</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<img src="http://www.placehold.it/400x300">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 
-	<?php include("_/inc/foot.php"); ?>
+				<?php include("_/inc/foot.php"); ?>

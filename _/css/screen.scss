@@ -268,8 +268,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .logomark {
 	width: 100px;
-	margin-top: 3px;
 	float: left;
+	a {
+		display: block;
+    	padding: 5px;
+    	padding-right: 7px;
+	}
 	img {
 		max-width: 100%;
 	}
@@ -305,9 +309,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         color: #fff;
         padding: 10px;
     }
-    .banner li a:hover {
+    .banner a:hover {
         background-color: transparentize($neg, 0.6);
     }
+
+
 
 .banner--clone {
 
@@ -383,8 +389,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	top: 165px;
 
 	@include break($d) {
-		font-size: em-font(50px);
-		top: 50px;
+		font-size: em-font(38px);
+		top: 260px;
 	}
 
 	&:before {
@@ -682,7 +688,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 blockquote {
 	margin-bottom: 10px;
-	padding: 4%;
+	padding: 10px 0;
 	//background-color: lighten($secondary, 25%);
 	//border: 1px solid $primary;
 	border-bottom-width: 8px;
@@ -692,10 +698,14 @@ blockquote {
 		font-size: em-font(9px);
 		font-style: italic !important;
 		&:before {
-			content: "“ ";
+			content: "“";
+			font-size: em-font(20px);
+			font-weight: bold;
 		}
 		&:after {
-			content: " ”";	
+			content: "”";
+			font-size: em-font(20px);
+			font-weight: bold;
 		}
 	}
 	.source {
@@ -795,24 +805,78 @@ blockquote {
 			text-shadow: 0 0 10px $pos;
 		}
 	}
-}
-.prev {
-	left: 0;
-	&:hover {
-		&:after {
-			content: "«";
+	&.prev {
+		left: 0;
+		&:hover {
+			&:after {
+				content: "«";
+			}
 		}
 	}
-}
-.next {
-	right: 0;
-	&:hover {
-		&:after {
-			content: "»";
+	&.next {
+		right: 0;
+		&:hover {
+			&:after {
+				content: "»";
+			}
 		}
 	}
 }
 
+#our-portfolio {
+	padding-top: 30px;
+}
+
+#testimonials {
+	padding-top: 60px;
+	border-top: 3px $primary solid;
+}
+
+#current-projects {
+	padding-top: 75px;
+	padding-bottom: 40px;
+	.btn {
+		font-size: em-font(10px);
+	}
+	.next-prev {
+
+		.next, .prev {
+			font-size: em-font(30px);
+			margin-top: -10px;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.prev {
+			right: 25px;
+		}
+	}
+}
+
+#descript1, #descript2 {
+	position: relative;
+	h5 {
+		max-width: 80%;
+	}
+}
+
+.next-prev {
+
+	.next, .prev {
+		display: none;
+		@include break($b) {
+			display: inline-block;
+		}
+		font-size: em-font(40px);
+		color: $primary;
+		font-weight: bold;
+		text-shadow: 0 0 10px $pos;
+		margin: 0;
+		&:hover {
+			color: lighten($primary, 10%);
+		}
+	}
+}
 
 #current1, #current2 {
 	max-height: 300px;
@@ -848,10 +912,17 @@ blockquote {
 
 .btn-wrap {
 	margin-bottom: 20px;
-	@include break($d) {margin-bottom: 50px;}
+	@include break($d) {
+		margin-bottom: 50px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
 }
 
 .greybg {
+	padding: 30px 0 0; 
 	background-color: darken($pos, 10%);
 }
 
@@ -920,7 +991,7 @@ blockquote {
 	position: static !important;
 }
 
-#testimony-header {
+.section-head {
 	font-size: 1.625em;
 	color: $neg;
 	text-transform: uppercase;
