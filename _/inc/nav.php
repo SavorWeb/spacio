@@ -31,6 +31,10 @@
 	<div class="row">
 		<div class="logomark"><a href="#top"><img src="_/img/logomark.png" alt=""></a></div>
 		<ul>
+			<li><a href="/spacio/">Condominiums</a></li>
+			<li><a href="/spacio/homes">Custom Homes</a></li>
+			<li><a href="/spacio/commercial">Commercial</a></li>
+			<li class="divider"></li>
 			<li><a href="#about-us">About us</a></li>
 			<li><a href="#our-portfolio">Portfolio</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>

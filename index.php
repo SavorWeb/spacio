@@ -6,7 +6,7 @@
 
 <style>
 	.condo-link {
-		border-bottom: 3px solid rgba(195,0,22,.7);
+		background-color: rgba(195,0,22,.7) !important;
 	}
 </style>
 
@@ -44,14 +44,14 @@
 		<div class="colspan12-5 as-grid with-gutter">
 			<!-- <img class="tiles" src="_/img/float-tiles.png" alt=""> -->
 			<div class="tiles">
-				<div class="tile tile-1"><img class="tile-ani1" src="_/img/tiles-1.png" alt=""></div>
-				<div class="tile tile-2"><img class="tile-ani2" src="_/img/tiles-2.png" alt=""></div>
-				<div class="tile tile-3"><img class="tile-ani3" src="_/img/tiles-3.png" alt=""></div>
-				<div class="tile tile-4"><img class="tile-ani2" src="_/img/tiles-4.png" alt=""></div>
-				<div class="tile tile-5"><img class="tile-ani1" src="_/img/tiles-5.png" alt=""></div>
-				<div class="tile tile-6"><img class="tile-ani3" src="_/img/tiles-6.png" alt=""></div>
-				<div class="tile tile-7"><img class="tile-ani2" src="_/img/tiles-7.png" alt=""></div>
-				<div class="tile tile-8"><img class="tile-ani1" src="_/img/tiles-8.png" alt=""></div>
+				<div class="tile tile-1"><img class="tile-ani1" src="_/img/tiles_1.png" alt=""></div>
+				<div class="tile tile-2"><img class="tile-ani2" src="_/img/tiles_2.png" alt=""></div>
+				<div class="tile tile-3"><img class="tile-ani3" src="_/img/tiles_3.png" alt=""></div>
+				<div class="tile tile-4"><img class="tile-ani2" src="_/img/tiles_4.png" alt=""></div>
+				<div class="tile tile-5"><img class="tile-ani1" src="_/img/tiles_5.png" alt=""></div>
+				<div class="tile tile-6"><img class="tile-ani3" src="_/img/tiles_6.png" alt=""></div>
+				<div class="tile tile-7"><img class="tile-ani2" src="_/img/tiles_7.png" alt=""></div>
+				<div class="tile tile-8"><img class="tile-ani1" src="_/img/tiles_8.png" alt=""></div>
 			</div>
 		</div>
 	</section>

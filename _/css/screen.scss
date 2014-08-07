@@ -78,6 +78,50 @@ a {
 	text-shadow: 0 0 5px $pos;
 }
 
+.divider {
+	border-right: 1px solid #fff;
+	height: 36px;
+	margin-right: 8px;
+}
+
+// .landing {
+// 	max-width: 600px;
+// 	margin: 100px auto 0;
+// }
+
+// .landing-logo {
+// 	max-width: 300px;
+// 	margin: 0 auto;
+// 	img {
+// 		width: 100%;
+// 	}
+// }
+
+// .landing-choices {
+// 	@include clearfix;
+// 	margin-top: 50px;
+// 	li {
+// 		float: left;
+// 		@media screen and (max-width: $d) {
+// 		.choice-btn{width: 90%;}
+// 			float: none;
+// 			clear: both;
+// 		}
+// 		.choice-btn {
+// 			text-align: center;
+// 			display: block;
+// 			border: 1px solid $primary;
+// 			padding: 10px 18px;
+// 			margin: 20px;
+// 			text-transform: uppercase;
+// 			&:hover {
+// 				background-color: $primary;
+// 				color: #fff;
+// 			}
+// 		}
+// 	}
+// }
+
 .pagehead {
 
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -269,6 +313,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .logomark {
 	width: 100px;
 	float: left;
+	position: absolute;
+	left: -62px;
+	top: -1px;
 	a {
 		display: block;
     	padding: 5px;
@@ -296,6 +343,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     }
     ul {
     	float: right;
+    	border-left: 1px solid #fff;
     	li {
     		float: left;
     	

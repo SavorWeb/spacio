@@ -3,6 +3,8 @@
 		<footer>
 			<div class="colspan12-4 as-grid">
 				<img class="footer-logo editable" id="footer-logo" src="_/img/logo-white.png" alt="">
+				<a href="http://www.bbb.org/south-east-florida/business-reviews/contractors-general/spacio-design-build-in-miami-fl-90081624#sealclick"><img src="http://seal-seflorida.bbb.org/seals/black-seal-187-130-spaciodesignbuild-90081624.png" style="width: 50%; float: left;" alt=""></a>
+				<a target="_blank" title="BuildZoom Verified Badge" href="http://www.buildzoom.com/node/66271459"><img alt="BuildZoom Verified Badge" src="http://olds3.buildzoom.com/_assets/badge-03.png" style="width: 50%;" border="0"></a>
 			</div>
 			<div class="colspan12-8 as-grid contact-details typeset editable" id="footer-data">
 				<p>Call us any time for a consultation</p>
@@ -17,6 +19,7 @@
 					175 SW 7th St. Suite 2111 <br>
 					Miami, FL 33130
 				</p>
+				<p>CGC #1521713</p>
 			</div>
 		</footer>
 	</section>
