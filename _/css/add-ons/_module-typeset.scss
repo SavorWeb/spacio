@@ -7,11 +7,7 @@
 // ------------------------------------------------------------
 
 .as-heading__headline 			{ @include adjust-font-size-to($size1); } 
-.as-heading__largest 			{ @include adjust-font-size-to($size2);
-									@include break($d) {
-										@include adjust-font-size-to($size1);
-									}
- } 	
+.as-heading__largest 			{ @include adjust-font-size-to($size1); } 	
 .as-heading__large 				{ @include adjust-font-size-to($size4); } 	
 .as-heading__medium				{ @include adjust-font-size-to($size4); } 	
 .as-heading__normal 			{ @include adjust-font-size-to($size5); } 	

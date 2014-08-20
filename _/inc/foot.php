@@ -16,7 +16,7 @@
 	window.mySwipe = $('.swipe').Swipe().data('Swipe');
 
 	var portfolio = new Swipe(document.getElementById('portfolio'), {
-		startSlide: 7,
+		startSlide: 0,
 		auto: 20000,
 		disableScroll: true,
 		stopPropagation: true,
@@ -56,6 +56,29 @@
 
 <script type="text/javascript" src="_/js/jquery.remodal.min.js"></script>
 
+<script type="text/javascript" src="_/js/headhesive.min.js"></script>
+
+<script>
+	
+
+        // Set options
+        var options = {
+            offset: '#showHere',
+            classes: {
+                clone:   'banner--clone',
+                stick:   'banner--stick',
+                unstick: 'banner--unstick'
+            }
+        };
+
+        // Initialise with options
+        var banner = new Headhesive('.banner', options);
+
+        // Headhesive destroy
+        // banner.destroy();
+    
+</script>
+
 <script src="_/js/jquery.scrolly.min.js"></script>
 <script type="text/javascript">
 
@@ -77,7 +100,22 @@ $(document).ready(function () {
     }
 });
 </script>
-<script src="_/js/anchor-scroll.js"></script>
+<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 <script src="_/js/script.min.js"></script>
 
 </body>

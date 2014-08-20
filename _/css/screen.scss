@@ -74,6 +74,68 @@ a {
 	@include break($d) {display: block;}
 }
 
+#call-now {
+	text-shadow: 0 0 5px $pos;
+}
+
+.divider {
+	border-right: 1px solid #fff;
+	height: 36px;
+	margin-right: 8px;
+}
+
+// .landing {
+// 	max-width: 600px;
+// 	margin: 100px auto 0;
+// }
+
+// .landing-logo {
+// 	max-width: 300px;
+// 	margin: 0 auto;
+// 	img {
+// 		width: 100%;
+// 	}
+// }
+
+// .landing-choices {
+// 	@include clearfix;
+// 	margin-top: 50px;
+// 	li {
+// 		float: left;
+// 		@media screen and (max-width: $d) {
+// 		.choice-btn{width: 90%;}
+// 			float: none;
+// 			clear: both;
+// 		}
+// 		.choice-btn {
+// 			text-align: center;
+// 			display: block;
+// 			border: 1px solid $primary;
+// 			padding: 10px 18px;
+// 			margin: 20px;
+// 			text-transform: uppercase;
+// 			&:hover {
+// 				background-color: $primary;
+// 				color: #fff;
+// 			}
+// 		}
+// 	}
+// }
+
+.pagehead {
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
+
+	// overflow-x: hidden;
+
 .dropdown {
 	position: absolute;
 	right: -34px;
@@ -101,24 +163,6 @@ a {
 	}
 
 }
-
-#call-now {
-	text-shadow: 0 0 5px $pos;
-}
-
-.pagehead {
-
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
-
-	// overflow-x: hidden;
 
 	.row {
 		padding-top: 15px !important;
@@ -258,6 +302,97 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 }
 
+#about-us {
+	@include break($d) {
+		padding-top: 75px;
+		position: relative;
+		top: -30px;
+	}
+}
+
+.logomark {
+	width: 100px;
+	float: left;
+	position: absolute;
+	left: -62px;
+	top: -1px;
+	a {
+		display: block;
+    	padding: 5px;
+    	padding-right: 7px;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+.banner {
+    background-color: transparentize($primary, 0.05);
+    width: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    display: none;
+    font-size: $size10;
+    @include break($d) {
+    	display: block;
+    }
+    .row {
+    	padding-top: 0;
+    	padding-bottom: 0; 
+    }
+    ul {
+    	float: right;
+    	border-left: 1px solid #fff;
+    	li {
+    		float: left;
+    	
+    	}
+    }
+
+}
+    .banner li a {
+    	display: block;
+    	text-transform: uppercase;
+        color: #fff;
+        padding: 10px;
+    }
+    .banner a:hover {
+        background-color: transparentize($neg, 0.6);
+    }
+
+
+
+.banner--clone {
+
+    /* Required styles */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+
+    /* Translate -100% to move off screen */
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+
+    /* Animations */
+    -webkit-transition: all 300ms ease-in-out;
+       -moz-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+
+}
+
+.banner--stick {
+
+    /* Translate back to 0%; */
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+}
+
+
 // ------------------------------------------------------------
 // END Navigation module
 // ------------------------------------------------------------
@@ -302,8 +437,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	top: 165px;
 
 	@include break($d) {
-		font-size: em-font(50px);
-		top: 50px;
+		font-size: em-font(38px);
+		top: 260px;
 	}
 
 	&:before {
@@ -601,7 +736,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 blockquote {
 	margin-bottom: 10px;
-	padding: 4%;
+	padding: 10px 0;
 	//background-color: lighten($secondary, 25%);
 	//border: 1px solid $primary;
 	border-bottom-width: 8px;
@@ -611,10 +746,14 @@ blockquote {
 		font-size: em-font(9px);
 		font-style: italic !important;
 		&:before {
-			content: "“ ";
+			content: "“";
+			font-size: em-font(20px);
+			font-weight: bold;
 		}
 		&:after {
-			content: " ”";	
+			content: "”";
+			font-size: em-font(20px);
+			font-weight: bold;
 		}
 	}
 	.source {
@@ -714,24 +853,78 @@ blockquote {
 			text-shadow: 0 0 10px $pos;
 		}
 	}
-}
-.prev {
-	left: 0;
-	&:hover {
-		&:after {
-			content: "«";
+	&.prev {
+		left: 0;
+		&:hover {
+			&:after {
+				content: "«";
+			}
 		}
 	}
-}
-.next {
-	right: 0;
-	&:hover {
-		&:after {
-			content: "»";
+	&.next {
+		right: 0;
+		&:hover {
+			&:after {
+				content: "»";
+			}
 		}
 	}
 }
 
+#our-portfolio {
+	padding-top: 30px;
+}
+
+#testimonials {
+	padding-top: 60px;
+	border-top: 3px $primary solid;
+}
+
+#current-projects {
+	padding-top: 75px;
+	padding-bottom: 40px;
+	.btn {
+		font-size: em-font(10px);
+	}
+	.next-prev {
+
+		.next, .prev {
+			font-size: em-font(30px);
+			margin-top: -10px;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.prev {
+			right: 25px;
+		}
+	}
+}
+
+#descript1, #descript2 {
+	position: relative;
+	h5 {
+		max-width: 80%;
+	}
+}
+
+.next-prev {
+
+	.next, .prev {
+		display: none;
+		@include break($b) {
+			display: inline-block;
+		}
+		font-size: em-font(40px);
+		color: $primary;
+		font-weight: bold;
+		text-shadow: 0 0 10px $pos;
+		margin: 0;
+		&:hover {
+			color: lighten($primary, 10%);
+		}
+	}
+}
 
 #current1, #current2 {
 	max-height: 300px;
@@ -767,10 +960,17 @@ blockquote {
 
 .btn-wrap {
 	margin-bottom: 20px;
-	@include break($d) {margin-bottom: 50px;}
+	@include break($d) {
+		margin-bottom: 50px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
 }
 
 .greybg {
+	padding: 30px 0 0; 
 	background-color: darken($pos, 10%);
 }
 
@@ -822,7 +1022,7 @@ blockquote {
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.client .parallax-item img {
-		margin-top: 350px;
+		@include break($d) {margin-top: 350px;}
 	}
 }
 
@@ -839,7 +1039,7 @@ blockquote {
 	position: static !important;
 }
 
-#testimony-header {
+.section-head {
 	font-size: 1.625em;
 	color: $neg;
 	text-transform: uppercase;

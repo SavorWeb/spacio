@@ -526,32 +526,14 @@ a:not(> img) {
   }
 }
 
-.dropdown {
-  position: absolute;
-  right: -34px;
-  top: 110px;
-  text-align: right;
-  z-index: 5;
-}
-.dropdown a {
-  display: block;
-  color: white;
-  padding: 5px 10px;
-}
-.dropdown li {
-  background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: background-color 0.1s ease-in-out;
-  -moz-transition: background-color 0.1s ease-in-out;
-  -ms-transition: background-color 0.1s ease-in-out;
-  -o-transition: background-color 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out;
-}
-.dropdown li:hover, .dropdown li:active {
-  background-color: rgba(195, 0, 22, 0.7);
-}
-
 #call-now {
   text-shadow: 0 0 5px white;
+}
+
+.divider {
+  border-right: 1px solid #fff;
+  height: 36px;
+  margin-right: 8px;
 }
 
 .pagehead {
@@ -571,6 +553,29 @@ a:not(> img) {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
   /* IE6-8 */
+}
+.pagehead .dropdown {
+  position: absolute;
+  right: -34px;
+  top: 110px;
+  text-align: right;
+  z-index: 5;
+}
+.pagehead .dropdown a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+}
+.pagehead .dropdown li {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+.pagehead .dropdown li:hover, .pagehead .dropdown li:active {
+  background-color: rgba(195, 0, 22, 0.7);
 }
 .pagehead .row {
   padding-top: 15px !important;
@@ -749,6 +754,97 @@ a:not(> img) {
   }
 }
 
+.lt-ie9 #about-us {
+  padding-top: 75px;
+  position: relative;
+  top: -30px;
+}
+@media screen and (min-width: 960px) {
+  #about-us {
+    padding-top: 75px;
+    position: relative;
+    top: -30px;
+  }
+}
+
+.logomark {
+  width: 100px;
+  float: left;
+  position: absolute;
+  left: -62px;
+  top: -1px;
+}
+.logomark a {
+  display: block;
+  padding: 5px;
+  padding-right: 7px;
+}
+.logomark img {
+  max-width: 100%;
+}
+
+.banner {
+  background-color: rgba(195, 0, 22, 0.95);
+  width: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  display: none;
+  font-size: 12px;
+}
+.lt-ie9 .banner {
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  .banner {
+    display: block;
+  }
+}
+.banner .row {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.banner ul {
+  float: right;
+  border-left: 1px solid #fff;
+}
+.banner ul li {
+  float: left;
+}
+
+.banner li a {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+}
+
+.banner a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner--clone {
+  /* Required styles */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Translate -100% to move off screen */
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  /* Animations */
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.banner--stick {
+  /* Translate back to 0%; */
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
 .main-cover {
   background: url(../img/main.jpg) no-repeat;
   -webkit-background-size: cover;
@@ -796,13 +892,13 @@ a:not(> img) {
   top: 165px;
 }
 .lt-ie9 .hero-headline {
-  font-size: 3.125em;
-  top: 50px;
+  font-size: 2.375em;
+  top: 260px;
 }
 @media screen and (min-width: 960px) {
   .hero-headline {
-    font-size: 3.125em;
-    top: 50px;
+    font-size: 2.375em;
+    top: 260px;
   }
 }
 .hero-headline:before {
@@ -1153,7 +1249,7 @@ a:not(> img) {
 
 blockquote {
   margin-bottom: 10px;
-  padding: 4%;
+  padding: 10px 0;
   border-bottom-width: 8px;
   color: black;
   font-size: 26px;
@@ -1163,10 +1259,14 @@ blockquote .quote {
   font-style: italic !important;
 }
 blockquote .quote:before {
-  content: "“ ";
+  content: "“";
+  font-size: 1.25em;
+  font-weight: bold;
 }
 blockquote .quote:after {
-  content: " ”";
+  content: "”";
+  font-size: 1.25em;
+  font-weight: bold;
 }
 blockquote .source {
   color: #c30016;
@@ -1259,19 +1359,71 @@ blockquote .source {
   font-weight: bold;
   text-shadow: 0 0 10px white;
 }
-
-.prev {
+.controllers.prev {
   left: 0;
 }
-.prev:hover:after {
+.controllers.prev:hover:after {
   content: "«";
 }
-
-.next {
+.controllers.next {
   right: 0;
 }
-.next:hover:after {
+.controllers.next:hover:after {
   content: "»";
+}
+
+#our-portfolio {
+  padding-top: 30px;
+}
+
+#testimonials {
+  padding-top: 60px;
+  border-top: 3px #c30016 solid;
+}
+
+#current-projects {
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
+#current-projects .btn {
+  font-size: 0.625em;
+}
+#current-projects .next-prev .next, #current-projects .next-prev .prev {
+  font-size: 1.875em;
+  margin-top: -10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#current-projects .next-prev .prev {
+  right: 25px;
+}
+
+#descript1, #descript2 {
+  position: relative;
+}
+#descript1 h5, #descript2 h5 {
+  max-width: 80%;
+}
+
+.next-prev .next, .next-prev .prev {
+  display: none;
+  font-size: 2.5em;
+  color: #c30016;
+  font-weight: bold;
+  text-shadow: 0 0 10px white;
+  margin: 0;
+}
+.lt-ie9 .next-prev .next, .lt-ie9 .next-prev .prev {
+  display: inline-block;
+}
+@media screen and (min-width: 420px) {
+  .next-prev .next, .next-prev .prev {
+    display: inline-block;
+  }
+}
+.next-prev .next:hover, .next-prev .prev:hover {
+  color: #f6001c;
 }
 
 #current1, #current2 {
@@ -1317,13 +1469,20 @@ blockquote .source {
 .lt-ie9 .btn-wrap {
   margin-bottom: 50px;
 }
+.lt-ie9 .btn-wrap:last-of-type {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 960px) {
   .btn-wrap {
     margin-bottom: 50px;
   }
+  .btn-wrap:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .greybg {
+  padding: 30px 0 0;
   background-color: #e6e6e6;
 }
 
@@ -1394,10 +1553,16 @@ blockquote .source {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .lt-ie9 .client .parallax-item img {
+    margin-top: 350px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 960px) {
   .client .parallax-item img {
     margin-top: 350px;
   }
 }
+
 .is-cms .parallax-item {
   margin-top: 0;
 }
@@ -1411,7 +1576,7 @@ blockquote .source {
   position: static !important;
 }
 
-#testimony-header {
+.section-head {
   font-size: 1.625em;
   color: black;
   text-transform: uppercase;

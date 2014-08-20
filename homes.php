@@ -6,8 +6,13 @@
 
 <style>
 	.main-cover {
-		background-image: url(media/photos/p37.jpg);
+		background-image: url(media/photos/p39.jpg);
 	}
+
+	.home-link {
+		background-color: rgba(195,0,22,.7) !important;
+	}
+
 </style>
 
 </head>
@@ -16,12 +21,12 @@
 	<div class="main-cover parallax" data-velocity="-0.5">
 		<?php include("_/inc/nav.php"); ?>
 
-		<div class="row">
+		<div id="showHere" class="row">
 			<h1 class="hero-headline editable" id="the-hero-headline">GO AHEAD,<br />ENVISION GRANDEUR.</h1>
 		</div>
 	</div>
 
-	<section class="row">
+	<section class="row" id="about-us">
 		<div class="colspan12-7 as-grid typeset top-articles">
 			<div id="feature1" class="editable">
 				<h1>Philosophy</h1>
@@ -43,40 +48,52 @@
 		<div class="colspan12-5 as-grid with-gutter">
 			<!-- <img class="tiles" src="_/img/float-tiles.png" alt=""> -->
 			<div class="tiles">
-				<div class="tile tile-1"><img class="tile-ani1" src="_/img/tiles-1.png" alt=""></div>
-				<div class="tile tile-2"><img class="tile-ani2" src="_/img/tiles-2.png" alt=""></div>
-				<div class="tile tile-3"><img class="tile-ani3" src="_/img/tiles-3.png" alt=""></div>
-				<div class="tile tile-4"><img class="tile-ani2" src="_/img/tiles-4.png" alt=""></div>
-				<div class="tile tile-5"><img class="tile-ani1" src="_/img/tiles-5.png" alt=""></div>
-				<div class="tile tile-6"><img class="tile-ani3" src="_/img/tiles-6.png" alt=""></div>
-				<div class="tile tile-7"><img class="tile-ani2" src="_/img/tiles-7.png" alt=""></div>
-				<div class="tile tile-8"><img class="tile-ani1" src="_/img/tiles-8.png" alt=""></div>
+				<div class="tile tile-1"><img class="tile-ani1" src="_/img/tiles_1.png" alt=""></div>
+				<div class="tile tile-2"><img class="tile-ani2" src="_/img/tiles_2.png" alt=""></div>
+				<div class="tile tile-3"><img class="tile-ani3" src="_/img/tiles_3.png" alt=""></div>
+				<div class="tile tile-4"><img class="tile-ani2" src="_/img/tiles_4.png" alt=""></div>
+				<div class="tile tile-5"><img class="tile-ani1" src="_/img/tiles_5.png" alt=""></div>
+				<div class="tile tile-6"><img class="tile-ani3" src="_/img/tiles_6.png" alt=""></div>
+				<div class="tile tile-7"><img class="tile-ani2" src="_/img/tiles_7.png" alt=""></div>
+				<div class="tile tile-8"><img class="tile-ani1" src="_/img/tiles_8.png" alt=""></div>
 			</div>
 		</div>
 	</section>
-<div class="portfolio-window">
-	<button class="controllers prev" onclick='portfolio.prev()'></button> 
-  	<button class="controllers next" onclick='portfolio.next()'></button>
-	<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">
-		<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
-			<li><img src="media/photos/p5.jpg" alt=""></li>
-			<li><img src="media/photos/p6.jpg" alt=""></li>
-			<li><img src="media/photos/p7.jpg" alt=""></li>
-			<li><img src="media/photos/p8.jpg" alt=""></li>
-			<li><img src="media/photos/p9.jpg" alt=""></li>
-			<li><img src="media/photos/p10.jpg" alt=""></li>
-			<li><img src="media/photos/p11.jpg" alt=""></li>
-			<li><img src="media/photos/p12.jpg" alt=""></li>
-			<li><img src="media/photos/p13.jpg" alt=""></li>
-			<li><img src="media/photos/p14.jpg" alt=""></li>
-			<li><img src="media/photos/p15.jpg" alt=""></li>
-		</ul>
+	<div id="our-portfolio">
+		<section class="row typset">
+			<div class="colspan12-10 as-grid">
+				<h2 class="editable section-head">Portfolio</h2>
+				<p>Take a moment and browse through a few examples of our work.</p>
+			</div>
+			<div class="colspan12-2 as-grid next-prev">
+				<button class="prev" onclick='portfolio.prev()'>«</button> 
+				<button class="next" onclick='portfolio.next()'>»</button>
+			</div>
+		</section>
+		<div id="our-work" class="portfolio-window">
+			<button class="controllers prev" onclick='portfolio.prev()'></button> 
+			<button class="controllers next" onclick='portfolio.next()'></button>
+			<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">
+				<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
+					<li><img src="media/photos/p5.jpg" alt=""></li>
+					<li><img src="media/photos/p6.jpg" alt=""></li>
+					<li><img src="media/photos/p7.jpg" alt=""></li>
+					<li><img src="media/photos/p8.jpg" alt=""></li>
+					<li><img src="media/photos/p9.jpg" alt=""></li>
+					<li><img src="media/photos/p10.jpg" alt=""></li>
+					<li><img src="media/photos/p11.jpg" alt=""></li>
+					<li><img src="media/photos/p12.jpg" alt=""></li>
+					<li><img src="media/photos/p13.jpg" alt=""></li>
+					<li><img src="media/photos/p14.jpg" alt=""></li>
+					<li><img src="media/photos/p15.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
 	</div>
-</div>
-
-<section id="testimonials" class="row typset">
+	<div id="testimonials" class="greybg">
+<section class="row typset">
 	<div class="colspan12-12">
-		<h2 id="testimony-header" class="editable">Why choose Spacio</h2>
+		<h2 id="testimony-header" class="editable section-head">Why choose Spacio</h2>
 	</div>
 	<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
 		<blockquote class="editable">
@@ -91,50 +108,58 @@
 		</blockquote>
 	</div>
 </section>
+</div>
+	<section id="current-projects" class="row typeset">
+		<div class="colspan12-12">
+			<h2 id="projects" class="editable">Current Projects</h2>
+		</div>
+		<div class="project colspan12-8 colspan6-4 as-grid">
+			<button class="controllers prev" onclick='current1.prev()'></button> 
+			<button class="controllers next" onclick='current1.next()'></button>
+			<div id='current1' class='swipe'>
+				<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
+					<li><img src="media/photos/p5.jpg" alt=""></li>
+					<li><img src="media/photos/p6.jpg" alt=""></li>
+					<li><img src="media/photos/p7.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-1">
+			<div id="descript1" class="editable">
+				<h5>Project title</h5>
+			<div class="next-prev">
+				<button class="prev" onclick='current1.prev()'>«</button> 
+				<button class="next" onclick='current1.next()'>»</button>
+			</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
+			</div>
+			<a href="#details1" class="btn">Read More</a>
+		</div>
+		<div class="project colspan12-8 colspan6-4 as-grid">
+			<button class="controllers prev" onclick='current2.prev()'></button> 
+			<button class="controllers next" onclick='current2.next()'></button>
+			<div id='current2' class='swipe'>
+				<ul id="slider-pictures2" class='swipe-wrap editable-gallery' data-links="false">
+					<li><img src="media/photos/p8.jpg" alt=""></li>
+					<li><img src="media/photos/p9.jpg" alt=""></li>
+					<li><img src="media/photos/p10.jpg" alt=""></li>				
+				</ul>
+			</div>
+		</div>
+		<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-2">
+			<div id="descript2" class="editable">
+				<h5>Project title</h5>
+			<div class="next-prev">
+				<button class="prev" onclick='current2.prev()'>«</button> 
+				<button class="next" onclick='current2.next()'>»</button>
+			</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
+			</div>
+			<a href="#details2" class="btn">Read More</a>
+		</div>
+	</section>
 
-<section class="row typeset">
-	<div class="colspan12-12">
-		<h2 id="projects" class="editable">Current Projects</h2>
-	</div>
-	<div class="project colspan12-8 colspan6-4 as-grid">
-<button class="controllers prev" onclick='current1.prev()'></button> 
-  	<button class="controllers next" onclick='current1.next()'></button>
-		<div id='current1' class='swipe'>
-			<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="media/photos/p5.jpg" alt=""></li>
-				<li><img src="media/photos/p6.jpg" alt=""></li>
-				<li><img src="media/photos/p7.jpg" alt=""></li>
-			</ul>
-		</div>
-	</div>
-	<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-1">
-		<div id="descript1" class="editable">
-			<h5>Project title</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
-		</div>
-		<a href="#details1" class="btn">Read More</a>
-	</div>
-	<div class="project colspan12-8 colspan6-4 as-grid">
-<button class="controllers prev" onclick='current2.prev()'></button> 
-  	<button class="controllers next" onclick='current2.next()'></button>
-		<div id='current2' class='swipe'>
-			<ul id="slider-pictures2" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="media/photos/p8.jpg" alt=""></li>
-				<li><img src="media/photos/p9.jpg" alt=""></li>
-				<li><img src="media/photos/p10.jpg" alt=""></li>				
-			</ul>
-		</div>
-	</div>
-	<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-2">
-		<div id="descript2" class="editable">
-			<h5>Project title</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
-		</div>
-		<a href="#details2" class="btn">Read More</a>
-	</div>
-</section>
-
-<div class="greybg">
+<div id="clients" class="greybg">
 <section class="row typeset client">
 	<h1 class="editable" id="client-header">Clients</h1>
 	<div class="parallax-item" data-velocity="-0.4">
