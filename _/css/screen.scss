@@ -426,7 +426,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .hero-headline {
 	color: $pos;
-	background-color: transparentize($primary, 0.3);
+	//background-color: transparentize($primary, 0.3);
 	display: inline-block;
 	padding: 15px;
 	font-weight: lighter;
@@ -435,23 +435,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	letter-spacing: 1px;
 	position: relative;
 	top: 165px;
+	text-shadow: 0 0 5px #000;
 
 	@include break($d) {
 		font-size: em-font(38px);
 		top: 260px;
 	}
 
-	&:before {
-	  content: "";
-	  position: absolute;
-	  background: transparentize($primary, 0.3);  /* Match the background */
-	  top: 0;
-	  bottom: 0;
-	  width: 9999px;   /* some huge width */
-	} 
-	&:before {
-	  right: 100%;
-	}
+	// &:before {
+	//   content: "";
+	//   position: absolute;
+	//   background: transparentize($primary, 0.3);  /* Match the background */
+	//   top: 0;
+	//   bottom: 0;
+	//   width: 9999px;   /* some huge width */
+	// } 
+	// &:before {
+	//   right: 100%;
+	// }
 
 }
 
@@ -826,7 +827,7 @@ blockquote {
 }
 
 .portfolio-window {
-	max-height: 500px;
+	max-height: 650px;
 	overflow: hidden;
 	position: relative;
 }

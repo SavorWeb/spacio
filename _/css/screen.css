@@ -881,7 +881,6 @@ a:not(> img) {
 
 .hero-headline {
   color: white;
-  background-color: rgba(195, 0, 22, 0.7);
   display: inline-block;
   padding: 15px;
   font-weight: lighter;
@@ -890,6 +889,7 @@ a:not(> img) {
   letter-spacing: 1px;
   position: relative;
   top: 165px;
+  text-shadow: 0 0 5px #000;
 }
 .lt-ie9 .hero-headline {
   font-size: 2.375em;
@@ -900,19 +900,6 @@ a:not(> img) {
     font-size: 2.375em;
     top: 260px;
   }
-}
-.hero-headline:before {
-  content: "";
-  position: absolute;
-  background: rgba(195, 0, 22, 0.7);
-  /* Match the background */
-  top: 0;
-  bottom: 0;
-  width: 9999px;
-  /* some huge width */
-}
-.hero-headline:before {
-  right: 100%;
 }
 
 .editable-gallery .fancybox {
@@ -1326,7 +1313,7 @@ blockquote .source {
 }
 
 .portfolio-window {
-  max-height: 500px;
+  max-height: 650px;
   overflow: hidden;
   position: relative;
 }
