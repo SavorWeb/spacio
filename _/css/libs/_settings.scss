@@ -16,15 +16,16 @@
 // a-z viewports. Place where design should change, not always on device widths
 // Hat-tip to @hereinthehive for getting us thinking about naming suggestions
 
-$a								: 300px;	// first viewport 
-$b								: 420px;	// up one
-$c								: 600px;	// up two
-$d								: 960px;	// up three
-$e								: 960px;	// up four
-$f								: 960px;	// up five
+$a								: 300px;	// first viewport
+$b								: 420px;	// up one iPad Portrait
+$c								: 768px;	// up two iPad Landscape
+$d								: 1025px;	// up three Desktop
+$e								: 1025px;	// up four
+$f								: 1100px;	// up five
+$grande							: 1500px;
 $ie-fixed						: 960px;    // Viewport for IE fixed width
 
-$max 							: $d; 	// max viewport. Syntactically makes for a nicer option
+$max 							: 960px; 	// max viewport. Syntactically makes for a nicer option
 
 
 // At some point, you'll want to switch from a one column view to multi-column.

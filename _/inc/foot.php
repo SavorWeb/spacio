@@ -1,4 +1,4 @@
-
+</div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="_/js/responsive-nav.min.js"></script>
 <script src="_/js/responsive-accordion.min.js"></script>
@@ -16,8 +16,11 @@
 	window.mySwipe = $('.swipe').Swipe().data('Swipe');
 
 	var portfolio = new Swipe(document.getElementById('portfolio'), {
+<<<<<<< HEAD
 		startSlide: 0,
 		auto: 20000,
+=======
+>>>>>>> alt-scroller
 		disableScroll: true,
 		stopPropagation: true,
 	});
@@ -93,10 +96,12 @@ $(document).ready(function () {
     if ( window.isCMS ) {
 
     } else {
-		if ($(window).width() > 960) {
-			$('.parallax').scrolly({bgParallax: true});
-			$('.parallax-item').scrolly();
-		}
+    	$(window).load(function(){
+			if ($(window).width() > 1100) {
+				$('.parallax').scrolly({bgParallax: true});
+				$('.parallax-item').scrolly();
+			}
+    	});
     }
 });
 </script>
@@ -116,6 +121,25 @@ $(document).ready(function () {
   });
 });
 </script>
+<<<<<<< HEAD
+<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+=======
+>>>>>>> alt-scroller
 <script src="_/js/script.min.js"></script>
 
 </body>

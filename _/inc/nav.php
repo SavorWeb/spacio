@@ -8,9 +8,15 @@
 			<!-- <small>Call to schedule a consultation <a href="tel:7863530856">786.353.0856</a></small> -->
 			<ul id="navigation">
 				<li class="phonecall"><small class="editable" id="call-now">Call to schedule a consultation <a href="tel:7863530856">786.353.0856</a></small></li>
+<<<<<<< HEAD
 				<li><a class="comm-link" href="/spacio/commercial">Commercial</a></li>
 				<li><a class="home-link" href="/spacio/homes">Custom Homes</a></li>
 				<li><a class="condo-link" href="/spacio/">Condominiums</a></li>
+=======
+				<li><a class="condo-link" href="/spacio/condos">Condominiums</a></li>
+				<li><a class="home-link" href="/spacio/homes">Custom Homes</a></li>
+				<li><a class="comm-link" href="/spacio/">Commercial</a></li>
+>>>>>>> alt-scroller
 			</ul>
 		</nav>
 
@@ -20,7 +26,11 @@
 			<li><a href="#our-portfolio">Portfolio</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#current-projects">Current Projects</a></li>
+<<<<<<< HEAD
 			<li><a href="#clients">Clients</a></li>
+=======
+			<li><a class="client-link" href="#clients">Clients</a></li>
+>>>>>>> alt-scroller
 			<li><a href="#contact-us">Contact</a></li>
 		</ul>
 	</div>
