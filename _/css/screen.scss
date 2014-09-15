@@ -31,6 +31,11 @@ body {
 	color: $base-color;
 }
 
+.constrain {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
 a {
 	color: $action;
 	text-decoration: none;
@@ -173,6 +178,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		float: left;
 		margin: 12px 0 25px;
 		max-width: 50%;
+		@include break($b) {
+			max-width: 20%;
+		}
 		img {
 			width: 100%;
 		}
@@ -241,14 +249,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 						color: lighten($primary, 10%);
 					}
 				}
-
+				@include break($b) {
+					width: 33%;
+					&.phonecall {
+						width: 100%;
+						clear: both;
+					}
+				} 
 				@include break($d) {
 					width: auto;
 					margin: 0 1%;
-					&.phonecall {
-						clear: both;
-						width: 100%;
-					}
 					small a {
 						font-size: em-font(15px);
 						display: inline;
@@ -342,7 +352,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     	padding-bottom: 0; 
     }
     ul {
-    	float: right;
+    	float: left;
     	border-left: 1px solid #fff;
     	li {
     		float: left;
@@ -399,14 +409,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 .main-cover {
-	background: url(../img/main.jpg) no-repeat; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: scroll;
-	background-position: center;
-
+	background-image: url(../img/main.jpg); 
+	background-attachment: static;
+	background-repeat: no-repeat;
 	overflow: hidden;
 
 	min-height: 500px;
@@ -418,6 +423,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		min-height: 700px;
 		background-attachment: fixed;
 	}
+	@include break($d) {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position: center;
+	}
+	@include break($grande) {
+		background-size: 1500px;
+	}
 }
 
 .is-cms .main-cover {
@@ -426,8 +442,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .hero-headline {
 	color: $pos;
-	//background-color: transparentize($primary, 0.3);
 	display: inline-block;
+	//REMOVE FOR NOW
+	display: none;
 	padding: 15px;
 	font-weight: lighter;
 	font-family: 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif;
@@ -438,21 +455,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	text-shadow: 0 0 5px #000;
 
 	@include break($d) {
-		font-size: em-font(38px);
+		font-size: em-font(45px);
 		top: 260px;
 	}
 
-	// &:before {
-	//   content: "";
-	//   position: absolute;
-	//   background: transparentize($primary, 0.3);  /* Match the background */
-	//   top: 0;
-	//   bottom: 0;
-	//   width: 9999px;   /* some huge width */
-	// } 
-	// &:before {
-	//   right: 100%;
-	// }
+	background-color: transparentize($primary, 0.3);
+	&:before {
+	  content: "";
+	  position: absolute;
+	  background: transparentize($primary, 0.3);  /* Match the background */
+	  top: 0;
+	  bottom: 0;
+	  width: 9999px;   /* some huge width */
+	} 
+	&:before {
+	  right: 100%;
+	}
 
 }
 
@@ -491,12 +509,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	  z-index: 1;
 	}
 	&.tile-2 {
-	  top: 120px;
+	  top: 100px;
 	  left: 36px;
 	}
 	&.tile-3 {
-	  top: 70px;
-	  left: 160px;
+	  top: 60px;
+	  left: 180px;
 	}
 	&.tile-4 {
 	  top: 240px;
@@ -823,11 +841,11 @@ blockquote {
 }
 
 #portfolio {
-
+	
 }
 
 .portfolio-window {
-	max-height: 650px;
+	//max-height: 650px;
 	overflow: hidden;
 	position: relative;
 }
@@ -873,16 +891,16 @@ blockquote {
 }
 
 #our-portfolio {
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 #testimonials {
 	padding-top: 60px;
-	border-top: 3px $primary solid;
+	// border-top: 3px $primary solid;
 }
 
 #current-projects {
-	padding-top: 75px;
+	padding-top:60px;
 	padding-bottom: 40px;
 	.btn {
 		font-size: em-font(10px);
@@ -928,7 +946,7 @@ blockquote {
 }
 
 #current1, #current2 {
-	max-height: 300px;
+	max-height: 350px;
 	overflow: hidden;
 	@include break($b) {
 		margin-bottom: 25px;
@@ -971,7 +989,7 @@ blockquote {
 }
 
 .greybg {
-	padding: 30px 0 0; 
+	// padding: 30px 0 0; 
 	background-color: darken($pos, 10%);
 }
 
@@ -1002,30 +1020,71 @@ blockquote {
 	display: inherit;
 }
 
+#clients {
+	padding-top: 30px;
+}
+
 .client {
 	position: relative;
 	@include break($d) {
 		overflow: hidden;
-		max-height: 600px;
+		max-height: 630px;
 		h1 {
 			z-index: 5;
 			position: relative;
+			//background-color: darken($pos, 10%);
 		}
 		.parallax-item {
 			position: relative;
 			
-			img {
-				margin-top: 100px; //425
+			img.colab {
+				margin-top: 60px; //425
+			}
+			img.building {
+				margin-top: 130px; //425
 			}
 		}
 	}
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	.client .parallax-item img {
-		@include break($d) {margin-top: 350px;}
-	}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  max-height: 620px;
+  img {width: 100%;}
 }
+.swipe-wrap {
+  margin: 0 !important;
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > li {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.swipe-wrap li {
+	display: block;
+}
+
+.swipe-wrap > a {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.swipe-wrap a {
+  display: block;
+}
+
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+// 	.client .parallax-item img.colab {
+// 		@include break($d) {margin-top: 250px;}
+// 	}
+// 	.client .parallax-item img.building {
+// 		@include break($d) {margin-top: 270px;}
+// 	}
+// }
 
 .is-cms .parallax-item {
 	margin-top: 0;
@@ -1043,7 +1102,7 @@ blockquote {
 .section-head {
 	font-size: 1.625em;
 	color: $neg;
-	text-transform: uppercase;
+	//text-transform: uppercase;
 }
 
 /* ::Import styles */

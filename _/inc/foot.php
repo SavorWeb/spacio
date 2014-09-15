@@ -1,4 +1,4 @@
-
+</div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="_/js/responsive-nav.min.js"></script>
 <script src="_/js/responsive-accordion.min.js"></script>
@@ -16,8 +16,6 @@
 	window.mySwipe = $('.swipe').Swipe().data('Swipe');
 
 	var portfolio = new Swipe(document.getElementById('portfolio'), {
-		startSlide: 7,
-		auto: 20000,
 		disableScroll: true,
 		stopPropagation: true,
 	});
@@ -93,10 +91,12 @@ $(document).ready(function () {
     if ( window.isCMS ) {
 
     } else {
-		if ($(window).width() > 960) {
-			$('.parallax').scrolly({bgParallax: true});
-			$('.parallax-item').scrolly();
-		}
+    	$(window).load(function(){
+			if ($(window).width() > 1100) {
+				$('.parallax').scrolly({bgParallax: true});
+				$('.parallax-item').scrolly();
+			}
+    	});
     }
 });
 </script>
