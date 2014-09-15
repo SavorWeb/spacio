@@ -53,7 +53,7 @@
 		<div class="colspan12-7 as-grid typeset top-articles">
 			<div id="feature1" class="editable">
 				<h1>PHILOSOPHY</h1>
-				<p>SPACIO possesses a wealth of experience in the high-end commercial building arena, and we’re committed to delivering flawless construction, elevated by extensive collaboration. Yet, the most notable aspect of our approach is placing tremendous significance on completing projects on time, and on budget. That’s just how we work – no exceptions. This is made possible due to our expertise, and because we listen. We’re proactive. We deliver on what we promise. And you always know where we stand. We’re here to make it easy for you.</p>
+				<p>SPACiO possesses a wealth of experience in the high-end commercial building arena, and we’re committed to delivering flawless construction, elevated by extensive collaboration. Yet, the most notable aspect of our approach is placing tremendous significance on completing projects on time, and on budget. That’s just how we work – no exceptions. This is made possible due to our expertise, and because we listen. We’re proactive. We deliver on what we promise. And you always know where we stand. We’re here to make it easy for you.</p>
 			</div>
 			<div class="btn-wrap">
 				<a href="#leadership" class="btn">Leadership</a>
@@ -61,7 +61,7 @@
 			</div>
 			<div id="feature2" class="editable">
 				<h1>EXPERTISE</h1>
-				<p>SPACiO is a full service general contractor with expertise in large-scale commercial build outs in the high-end hotel, restaurant, and retail spaces. We’ve worked with elite brands - like Marriott, Nobu, Breitling, and Eden Roc Hotel – as more than just general contractors, but also as providers of comprehensive pre-construction services. We assume the perspective of a building owner, meaning we focus on identifying the most cost-effective approach to design and construction.</p>
+				<p>SPACiO is a full service general contractor with expertise in large-scale commercial build outs in the high-end hotel, restaurant, and retail spaces. We’ve worked with elite brands - like Marriott, Nobu, Breitling, and Eden Roc Hotel – as more than just general contractors, but also as providers of comprehensive pre-construction services. We assume the perspective of a building owner, meaning we focus on identifying the most cost-effective approach to design and construct.</p>
 			</div>
 			<div class="btn-wrap">
 				<a href="#services" class="btn">Services</a>
@@ -194,11 +194,11 @@
 				<div class="colspan12-12 with-gutter"><h2>PRINCIPALS</h2></div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Alexander Wertheim</h4>
-					<p>Alexander founded SPACiO Design Build and has been involved with real estate and condo owner relationships for the majority of his professional life. A General Contractor by trade, Alex started as an Asset Manager for a major NY Real Estate Developer overseeing 10,000 apartment units in Connecticut and upon returning to South Florida started a Commercial and Residential General Contractor firm as a precursor to SPACiO Design Build. Alexander plays a critical role in ensuring that our offerings exceed customers’ expectations through his leadership of the Sales, Operations, and Business Development efforts..</p>
+					<p>Alexander founded SPACiO Design Build and has been involved with real estate and condo owner relationships for the majority of his professional life. A General Contractor by trade, Alex started as an Asset Manager for a major NY Real Estate Developer overseeing 10,000 apartment units in Connecticut and upon returning to South Florida started a Commercial and Residential General Contractor firm as a precursor to SPACiO Design Build. Alexander plays a critical role in ensuring that our offerings exceed customers’ expectations through his leadership of the Sales, Operations, and Business Development efforts.</p>
 				</div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Brian Nisula</h4>
-					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development.  Within SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
+					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development. Within SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
 				</div>
 			</div>
 			<div class="gutter-grid repeatable">

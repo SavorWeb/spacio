@@ -203,7 +203,7 @@
 				</div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Brian Nisula</h4>
-					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development. SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
+					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development. Within SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
 				</div>
 			</div>
 			<div class="gutter-grid repeatable">
