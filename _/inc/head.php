@@ -10,7 +10,7 @@
 <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="initial-scale=1, user-scalable=no">
 <!-- 		<link rel="stylesheet" type="text/css" href="_/plugins/fancybox/source/jquery.fancybox.min.css"> -->

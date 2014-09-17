@@ -202,7 +202,7 @@
 				</div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Brian Nisula</h4>
-					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development. SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
+					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development. Within SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
 				</div>
 			</div>
 			<div class="gutter-grid repeatable">
@@ -220,7 +220,7 @@
 				<div class="colspan12-12 with-gutter"><h2>DESIGN LEADS</h2></div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Sheila Sperling</h4>
-					<p>Sheila Sperling is an invaluable member of the SPACiO team. Her management and sales skills, complemented by her design insights, have helped grow the company significantly. Her initial role was the position of Property Manager for Key International Developers – a prestigious company whose roster includes such well-known Miami properties as the Ivy, Mint, Eden House, South Beach Marriott Hotel, and Eden Roc Hotel. Sheila directed the contacts for the Mint, which was sold out in 45 days with a record-breaking receipt of full deposit prior to the due date. Sheila was responsible for further success at the Ivy, where she established an on-site upgrade service to make the design and construction process turnkey and stress-free for all international and domestic buyers. And, due to her tremendous marketing and project management capabilities, Sheila has successfully spearheaded design and sales for over eight condominium projects in the last nine years.</p>
+					<p>Sheila Sperling is an invaluable member of the SPACiO team. Her management and sales skills, complemented by her design insights, have helped grow the company significantly. Her initial role was the position of Property Manager for Key International Developers – a prestigious company whose roster includes such well-known Miami properties as the Ivy, Mint, Eden House, South Beach Marriott Hotel, and Eden Roc Hotel. At the Ivy, Sheila established an on-site upgrade service to make the design and construction process turnkey and stress-free for all international and domestic buyers. And, due to her tremendous marketing and project management capabilities, Sheila has successfully spearheaded design and sales for over eight condominium projects in the last nine years.</p>
 				</div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Caitlin Sherman</h4>

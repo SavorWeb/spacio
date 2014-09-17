@@ -16,11 +16,6 @@
 	window.mySwipe = $('.swipe').Swipe().data('Swipe');
 
 	var portfolio = new Swipe(document.getElementById('portfolio'), {
-<<<<<<< HEAD
-		startSlide: 0,
-		auto: 20000,
-=======
->>>>>>> alt-scroller
 		disableScroll: true,
 		stopPropagation: true,
 	});
@@ -85,9 +80,10 @@
 <script src="_/js/jquery.scrolly.min.js"></script>
 <script type="text/javascript">
 
-$('.dropdown').hide();
-
 $(document).ready(function () {
+
+	$('.dropdown').hide();
+
 	$('.menu-btn').on('click', function(){
 		$('.dropdown').slideToggle();
 	});
@@ -121,25 +117,6 @@ $(document).ready(function () {
   });
 });
 </script>
-<<<<<<< HEAD
-<script>
-	$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
-=======
->>>>>>> alt-scroller
 <script src="_/js/script.min.js"></script>
 
 </body>

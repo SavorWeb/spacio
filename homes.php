@@ -6,19 +6,13 @@
 
 <style>
 	.main-cover {
-<<<<<<< HEAD
-		background-image: url(media/photos/p39.jpg);
-=======
 		background-image: url(media/photos/portfolio/home/ch5.jpg);
->>>>>>> alt-scroller
 	}
 
 	.home-link {
 		background-color: rgba(195,0,22,.7) !important;
 	}
 
-<<<<<<< HEAD
-=======
 	.banner .home-link {
 		background-color: rgba(0,0,0,.7) !important;
 	}	
@@ -27,7 +21,6 @@
 		display: none !important;
 	}
 
->>>>>>> alt-scroller
 </style>
 
 </head>
@@ -36,8 +29,6 @@
 	<div class="main-cover parallax" data-velocity="-0.5">
 		<?php include("_/inc/nav.php"); ?>
 
-<<<<<<< HEAD
-=======
 
 
 <nav class="banner banner--clone">
@@ -58,7 +49,6 @@
 	</div>
 </nav>
 
->>>>>>> alt-scroller
 		<div id="showHere" class="row">
 			<h1 class="hero-headline editable" id="the-hero-headline">GO AHEAD,<br />ENVISION GRANDEUR.</h1>
 		</div>
@@ -82,46 +72,6 @@
 		<div class="colspan12-5 as-grid with-gutter">
 			<!-- <img class="tiles" src="_/img/float-tiles.png" alt=""> -->
 			<div class="tiles">
-<<<<<<< HEAD
-				<div class="tile tile-1"><img class="tile-ani1" src="_/img/tiles_1.png" alt=""></div>
-				<div class="tile tile-2"><img class="tile-ani2" src="_/img/tiles_2.png" alt=""></div>
-				<div class="tile tile-3"><img class="tile-ani3" src="_/img/tiles_3.png" alt=""></div>
-				<div class="tile tile-4"><img class="tile-ani2" src="_/img/tiles_4.png" alt=""></div>
-				<div class="tile tile-5"><img class="tile-ani1" src="_/img/tiles_5.png" alt=""></div>
-				<div class="tile tile-6"><img class="tile-ani3" src="_/img/tiles_6.png" alt=""></div>
-				<div class="tile tile-7"><img class="tile-ani2" src="_/img/tiles_7.png" alt=""></div>
-				<div class="tile tile-8"><img class="tile-ani1" src="_/img/tiles_8.png" alt=""></div>
-			</div>
-		</div>
-	</section>
-	<div id="our-portfolio">
-		<section class="row typset">
-			<div class="colspan12-10 as-grid">
-				<h2 class="editable section-head">Portfolio</h2>
-				<p>Take a moment and browse through a few examples of our work.</p>
-			</div>
-			<div class="colspan12-2 as-grid next-prev">
-				<button class="prev" onclick='portfolio.prev()'>«</button> 
-				<button class="next" onclick='portfolio.next()'>»</button>
-			</div>
-		</section>
-		<div id="our-work" class="portfolio-window">
-			<button class="controllers prev" onclick='portfolio.prev()'></button> 
-			<button class="controllers next" onclick='portfolio.next()'></button>
-			<div id='portfolio' class='swipe parallax-item' data-velocity="-0.2">
-				<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
-					<li><img src="media/photos/p5.jpg" alt=""></li>
-					<li><img src="media/photos/p6.jpg" alt=""></li>
-					<li><img src="media/photos/p7.jpg" alt=""></li>
-					<li><img src="media/photos/p8.jpg" alt=""></li>
-					<li><img src="media/photos/p9.jpg" alt=""></li>
-					<li><img src="media/photos/p10.jpg" alt=""></li>
-					<li><img src="media/photos/p11.jpg" alt=""></li>
-					<li><img src="media/photos/p12.jpg" alt=""></li>
-					<li><img src="media/photos/p13.jpg" alt=""></li>
-					<li><img src="media/photos/p14.jpg" alt=""></li>
-					<li><img src="media/photos/p15.jpg" alt=""></li>
-=======
 				<div class="tile tile-1"><img class="tile-ani1" src="_/img/prints_1.png" alt=""></div>
 				<div class="tile tile-2"><img class="tile-ani2" src="_/img/prints_2.png" alt=""></div>
 				<div class="tile tile-3"><img class="tile-ani3" src="_/img/prints_3.png" alt=""></div>
@@ -155,22 +105,14 @@
 					<li><img src="media/photos/portfolio/home/ch-6.jpg" alt=""></li>
 					<li><img src="media/photos/portfolio/home/ch-7.jpg" alt=""></li>
 					<li><img src="media/photos/portfolio/home/ch-8.jpg" alt=""></li>
->>>>>>> alt-scroller
 				</ul>
 			</div>
 		</div>
 	</div>
-<<<<<<< HEAD
-	<div id="testimonials" class="greybg">
-<section class="row typset">
-	<div class="colspan12-12">
-		<h2 id="testimony-header" class="editable section-head">Why choose Spacio</h2>
-=======
 	<div id="testimonials">
 <section class="row typset">
 	<div class="colspan12-12">
 		<h2 id="testimony-header" class="editable section-head">WHY CHOOSE SPACiO</h2>
->>>>>>> alt-scroller
 	</div>
 	<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
 		<blockquote class="editable">
@@ -188,45 +130,27 @@
 </div>
 	<section id="current-projects" class="row typeset">
 		<div class="colspan12-12">
-<<<<<<< HEAD
-			<h2 id="projects" class="editable">Current Projects</h2>
-=======
 			<h2 id="projects" class="editable">CURRENT PROJECTS</h2>
->>>>>>> alt-scroller
 		</div>
 		<div class="project colspan12-8 colspan6-4 as-grid">
 			<button class="controllers prev" onclick='current1.prev()'></button> 
 			<button class="controllers next" onclick='current1.next()'></button>
 			<div id='current1' class='swipe'>
 				<ul id="slider-pictures1" class='swipe-wrap editable-gallery' data-links="false">
-<<<<<<< HEAD
-					<li><img src="media/photos/p5.jpg" alt=""></li>
-					<li><img src="media/photos/p6.jpg" alt=""></li>
-					<li><img src="media/photos/p7.jpg" alt=""></li>
-=======
 					<li><img src="media/photos/projects/home/1/adrid1.jpg" alt=""></li>
 					<li><img src="media/photos/projects/home/1/adrid2.jpg" alt=""></li>
 					<li><img src="media/photos/projects/home/1/adrid7.jpg" alt=""></li>
->>>>>>> alt-scroller
 				</ul>
 			</div>
 		</div>
 		<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-1">
 			<div id="descript1" class="editable">
-<<<<<<< HEAD
-				<h5>Project title</h5>
-=======
 				<h5>Massive Private Zen Mansion</h5>
->>>>>>> alt-scroller
 			<div class="next-prev">
 				<button class="prev" onclick='current1.prev()'>«</button> 
 				<button class="next" onclick='current1.next()'>»</button>
 			</div>
-<<<<<<< HEAD
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
-=======
 				<p>Handling the design and construction of massive projects isn’t foreign to SPACiO, and this 12,000 sq ft custom home requires the team to fire on all cylinders. This residential compound will be a custom creation in every sense of the word, and SPACiO is tasked with the entire process, from plans to completion...</p>
->>>>>>> alt-scroller
 			</div>
 			<a href="#details1" class="btn">Read More</a>
 		</div>
@@ -235,44 +159,26 @@
 			<button class="controllers next" onclick='current2.next()'></button>
 			<div id='current2' class='swipe'>
 				<ul id="slider-pictures2" class='swipe-wrap editable-gallery' data-links="false">
-<<<<<<< HEAD
-					<li><img src="media/photos/p8.jpg" alt=""></li>
-					<li><img src="media/photos/p9.jpg" alt=""></li>
-					<li><img src="media/photos/p10.jpg" alt=""></li>				
-=======
 					<li><img src="media/photos/projects/home/2/jc-1.jpg" alt=""></li>
 					<li><img src="media/photos/projects/home/2/jc0.jpg" alt=""></li>
 					<li><img src="media/photos/projects/home/2/jc5.jpg" alt=""></li>
->>>>>>> alt-scroller
 				</ul>
 			</div>
 		</div>
 		<div class="colspan12-4 colspan6-2 as-grid with-gutter" id="description-2">
 			<div id="descript2" class="editable">
-<<<<<<< HEAD
-				<h5>Project title</h5>
-=======
 				<h5>Ultra Modern Miami Home</h5>
->>>>>>> alt-scroller
 			<div class="next-prev">
 				<button class="prev" onclick='current2.prev()'>«</button> 
 				<button class="next" onclick='current2.next()'>»</button>
 			</div>
-<<<<<<< HEAD
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolorem, sit beatae velit quae quod quibusdam.</p>
-=======
 				<p>Here at SPACiO, when we have the opportunity to design and build a custom home that will indeed be iconic of modern Miami, well, the team gets truly inspired. Our client desired a true partnership to bring his vision to life, and that’s exactly what we’re here to do...</p>
->>>>>>> alt-scroller
 			</div>
 			<a href="#details2" class="btn">Read More</a>
 		</div>
 	</section>
 
-<<<<<<< HEAD
-<div id="clients" class="greybg">
-=======
 <!-- <div id="clients" class="greybg">
->>>>>>> alt-scroller
 <section class="row typeset client">
 	<h1 class="editable" id="client-header">Clients</h1>
 	<div class="parallax-item" data-velocity="-0.4">
@@ -297,7 +203,7 @@
 				</div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Brian Nisula</h4>
-					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development. SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
+					<p>Brian brings extensive experience in construction and operations as an engineer, licensed Florida contractor, and developer to SPACiO Design Build. Anchored by a degree in Civil Engineering from Cornell University, throughout his career, Brian has overseen high-end home building and remodeling, as well as commercial real estate development. Within SPACiO Design Build, Brian’s primary focus is the continued development and refinement of proprietary software and workflow processes that ensure the on-time and on-budget completion of projects and overall customer satisfaction.</p>
 				</div>
 			</div>
 			<div class="gutter-grid repeatable">
@@ -315,7 +221,7 @@
 				<div class="colspan12-12 with-gutter"><h2>DESIGN LEADS</h2></div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Sheila Sperling</h4>
-					<p>Sheila Sperling is an invaluable member of the SPACiO team. Her management and sales skills, complemented by her design insights, have helped grow the company significantly. Her initial role was the position of Property Manager for Key International Developers – a prestigious company whose roster includes such well-known Miami properties as the Ivy, Mint, Eden House, South Beach Marriott Hotel, and Eden Roc Hotel. Sheila directed the contacts for the Mint, which was sold out in 45 days with a record-breaking receipt of full deposit prior to the due date. Sheila was responsible for further success at the Ivy, where she established an on-site upgrade service to make the design and construction process turnkey and stress-free for all international and domestic buyers. And, due to her tremendous marketing and project management capabilities, Sheila has successfully spearheaded design and sales for over eight condominium projects in the last nine years.</p>
+					<p>Sheila Sperling is an invaluable member of the SPACiO team. Her management and sales skills, complemented by her design insights, have helped grow the company significantly. Her initial role was the position of Property Manager for Key International Developers – a prestigious company whose roster includes such well-known Miami properties as the Ivy, Mint, Eden House, South Beach Marriott Hotel, and Eden Roc Hotel. At the Ivy, Sheila established an on-site upgrade service to make the design and construction process turnkey and stress-free for all international and domestic buyers. And, due to her tremendous marketing and project management capabilities, Sheila has successfully spearheaded design and sales for over eight condominium projects in the last nine years.</p>
 				</div>
 				<div class="colspan12-6 as-grid with-gutter">
 					<h4>Caitlin Sherman</h4>

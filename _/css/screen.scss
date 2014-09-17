@@ -352,11 +352,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     	padding-bottom: 0; 
     }
     ul {
-<<<<<<< HEAD
-    	float: right;
-=======
     	float: left;
->>>>>>> alt-scroller
     	border-left: 1px solid #fff;
     	li {
     		float: left;
@@ -414,20 +410,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .main-cover {
 	background-image: url(../img/main.jpg); 
-	background-attachment: static;
-	background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position: center;
 	overflow: hidden;
 
-	min-height: 500px;
+	min-height: 350px;
 	position: relative;
 	margin-bottom: 30px;
 	border-top: 5px solid $primary;
 
 	@include break($b) {
-		min-height: 700px;
-		background-attachment: fixed;
+	min-height: 400px;
+		
 	}
 	@include break($d) {
+		min-height: 700px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -459,11 +460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	text-shadow: 0 0 5px #000;
 
 	@include break($d) {
-<<<<<<< HEAD
-		font-size: em-font(38px);
-=======
 		font-size: em-font(45px);
->>>>>>> alt-scroller
 		top: 260px;
 	}
 
@@ -899,28 +896,16 @@ blockquote {
 }
 
 #our-portfolio {
-<<<<<<< HEAD
-	padding-top: 30px;
-=======
 	padding-top: 60px;
->>>>>>> alt-scroller
 }
 
 #testimonials {
 	padding-top: 60px;
-<<<<<<< HEAD
-	border-top: 3px $primary solid;
-}
-
-#current-projects {
-	padding-top: 75px;
-=======
 	// border-top: 3px $primary solid;
 }
 
 #current-projects {
 	padding-top:60px;
->>>>>>> alt-scroller
 	padding-bottom: 40px;
 	.btn {
 		font-size: em-font(10px);
@@ -933,12 +918,6 @@ blockquote {
 			position: absolute;
 			right: 0;
 			top: 0;
-<<<<<<< HEAD
-		}
-		.prev {
-			right: 25px;
-=======
->>>>>>> alt-scroller
 		}
 		.prev {
 			right: 25px;
@@ -953,16 +932,6 @@ blockquote {
 	}
 }
 
-<<<<<<< HEAD
-#descript1, #descript2 {
-	position: relative;
-	h5 {
-		max-width: 80%;
-	}
-}
-
-=======
->>>>>>> alt-scroller
 .next-prev {
 
 	.next, .prev {
@@ -1025,11 +994,7 @@ blockquote {
 }
 
 .greybg {
-<<<<<<< HEAD
-	padding: 30px 0 0; 
-=======
 	// padding: 30px 0 0; 
->>>>>>> alt-scroller
 	background-color: darken($pos, 10%);
 }
 
@@ -1087,12 +1052,6 @@ blockquote {
 	}
 }
 
-<<<<<<< HEAD
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	.client .parallax-item img {
-		@include break($d) {margin-top: 350px;}
-	}
-=======
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -1121,7 +1080,6 @@ blockquote {
 }
 .swipe-wrap a {
   display: block;
->>>>>>> alt-scroller
 }
 
 // @media screen and (-webkit-min-device-pixel-ratio:0) {

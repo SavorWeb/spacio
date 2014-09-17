@@ -497,17 +497,7 @@ a:not(> img) {
 }
 
 #call-now {
-<<<<<<< HEAD
-  text-shadow: 0 0 5px white;
-=======
   text-shadow: 0 0 5px #fff;
-}
-
-.divider {
-  border-right: 1px solid #fff;
-  height: 36px;
-  margin-right: 8px;
->>>>>>> alt-scroller
 }
 
 .divider {
@@ -543,11 +533,7 @@ a:not(> img) {
 }
 .pagehead .dropdown a {
   display: block;
-<<<<<<< HEAD
-  color: white;
-=======
   color: #fff;
->>>>>>> alt-scroller
   padding: 5px 10px;
 }
 .pagehead .dropdown li {
@@ -759,11 +745,7 @@ a:not(> img) {
   position: relative;
   top: -30px;
 }
-<<<<<<< HEAD
-@media screen and (min-width: 960px) {
-=======
 @media screen and (min-width: 1025px) {
->>>>>>> alt-scroller
   #about-us {
     padding-top: 75px;
     position: relative;
@@ -799,11 +781,7 @@ a:not(> img) {
 .lt-ie9 .banner {
   display: block;
 }
-<<<<<<< HEAD
-@media screen and (min-width: 960px) {
-=======
 @media screen and (min-width: 1025px) {
->>>>>>> alt-scroller
   .banner {
     display: block;
   }
@@ -813,11 +791,7 @@ a:not(> img) {
   padding-bottom: 0;
 }
 .banner ul {
-<<<<<<< HEAD
-  float: right;
-=======
   float: left;
->>>>>>> alt-scroller
   border-left: 1px solid #fff;
 }
 .banner ul li {
@@ -859,25 +833,28 @@ a:not(> img) {
 
 .main-cover {
   background-image: url(../img/main.jpg);
-  background-attachment: static;
-  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
   overflow: hidden;
-  min-height: 500px;
+  min-height: 350px;
   position: relative;
   margin-bottom: 30px;
   border-top: 5px solid #c30016;
 }
 .lt-ie9 .main-cover {
-  min-height: 700px;
-  background-attachment: fixed;
+  min-height: 400px;
 }
 @media screen and (min-width: 420px) {
   .main-cover {
-    min-height: 700px;
-    background-attachment: fixed;
+    min-height: 400px;
   }
 }
 .lt-ie9 .main-cover {
+  min-height: 700px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -887,6 +864,7 @@ a:not(> img) {
 }
 @media screen and (min-width: 1025px) {
   .main-cover {
+    min-height: 700px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -928,20 +906,12 @@ a:not(> img) {
   background-color: rgba(195, 0, 22, 0.7);
 }
 .lt-ie9 .hero-headline {
-<<<<<<< HEAD
-  font-size: 2.375em;
-=======
   font-size: 2.8125em;
->>>>>>> alt-scroller
   top: 260px;
 }
 @media screen and (min-width: 1025px) {
   .hero-headline {
-<<<<<<< HEAD
-    font-size: 2.375em;
-=======
     font-size: 2.8125em;
->>>>>>> alt-scroller
     top: 260px;
   }
 }
@@ -1398,27 +1368,15 @@ blockquote .source {
 }
 
 #our-portfolio {
-<<<<<<< HEAD
-  padding-top: 30px;
-=======
   padding-top: 60px;
->>>>>>> alt-scroller
 }
 
 #testimonials {
   padding-top: 60px;
-<<<<<<< HEAD
-  border-top: 3px #c30016 solid;
-}
-
-#current-projects {
-  padding-top: 75px;
-=======
 }
 
 #current-projects {
   padding-top: 60px;
->>>>>>> alt-scroller
   padding-bottom: 40px;
 }
 #current-projects .btn {
@@ -1447,11 +1405,7 @@ blockquote .source {
   font-size: 2.5em;
   color: #c30016;
   font-weight: bold;
-<<<<<<< HEAD
-  text-shadow: 0 0 10px white;
-=======
   text-shadow: 0 0 10px #fff;
->>>>>>> alt-scroller
   margin: 0;
 }
 .lt-ie9 .next-prev .next, .lt-ie9 .next-prev .prev {
@@ -1512,11 +1466,7 @@ blockquote .source {
 .lt-ie9 .btn-wrap:last-of-type {
   margin-bottom: 0;
 }
-<<<<<<< HEAD
-@media screen and (min-width: 960px) {
-=======
 @media screen and (min-width: 1025px) {
->>>>>>> alt-scroller
   .btn-wrap {
     margin-bottom: 50px;
   }
@@ -1526,7 +1476,6 @@ blockquote .source {
 }
 
 .greybg {
-  padding: 30px 0 0;
   background-color: #e6e6e6;
 }
 
@@ -1606,19 +1555,6 @@ blockquote .source {
   }
 }
 
-<<<<<<< HEAD
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .lt-ie9 .client .parallax-item img {
-    margin-top: 350px;
-  }
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 960px) {
-  .client .parallax-item img {
-    margin-top: 350px;
-  }
-}
-
-=======
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -1655,7 +1591,6 @@ blockquote .source {
   display: block;
 }
 
->>>>>>> alt-scroller
 .is-cms .parallax-item {
   margin-top: 0;
 }
