@@ -16,17 +16,17 @@
 	window.mySwipe = $('.swipe').Swipe().data('Swipe');
 
 	var portfolio = new Swipe(document.getElementById('portfolio'), {
-		disableScroll: true,
+		disableScroll: false,
 		stopPropagation: true,
 	});
 	var current1 = new Swipe(document.getElementById('current1'), {
 		// auto: 19000,
-		disableScroll: true,
+		disableScroll: false,
 		stopPropagation: true,
 	});
 	var current2 = new Swipe(document.getElementById('current2'), {
 		// auto: 15000,
-		disableScroll: true,
+		disableScroll: false,
 		stopPropagation: true,
 	});
 
