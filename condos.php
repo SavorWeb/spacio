@@ -12,7 +12,7 @@
 		background-color: rgba(0,0,0,.7) !important;
 	}
 	.main-cover {
-		background-image: url(media/photos/condo-landing.jpg);
+		background-image: url(media/condo-landing.jpg);
 	}
 </style>
 
@@ -181,7 +181,7 @@
 		<section class="row typeset client">
 			<h1 class="editable" id="client-header">CLIENTS</h1>
 			<div class="parallax-item" data-velocity="-0.4">
-				<img class="editable building" id="client-image" src="_/img/buildings.jpg" />
+				<img class="editable building" id="client-image" src="media/buildings.jpg" />
 			</div>
 		</section>
 	</div>

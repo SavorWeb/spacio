@@ -6,7 +6,7 @@
 
 <style>
 	.main-cover {
-		background-image: url(media/photos/portfolio/home/ch5.jpg);
+		background-image: url(media/home-landing.jpg);
 	}
 
 	.home-link {

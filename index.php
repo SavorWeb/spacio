@@ -6,7 +6,7 @@
 
 <style>
 	.main-cover {
-		background-image: url(media/photos/comm-landing.jpg);
+		background-image: url(media/comm-landing.jpg);
 	}
 
 	.comm-link {
@@ -177,7 +177,7 @@
 <section class="row typeset client">
 	<h1 class="editable" id="client-header">CLIENTS & COLLABORATORS</h1>
 	<div class="parallax-item" data-velocity="-0.4">
-		<img class="editable colab" id="client-image" src="_/img/colab.jpg" />
+		<img class="editable colab" id="client-image" src="media/colab.jpg" />
 	</div>
 </section>
 </div>
