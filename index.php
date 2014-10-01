@@ -31,8 +31,8 @@
 		<div class="logomark"><a href="#top"><img src="_/img/logomark.png" alt=""></a></div>
 		<ul>
 			<li><a class="comm-link" href="#top">Commercial</a></li>
-			<li><a class="home-link" href="/spacio/homes">Custom Homes</a></li>
-			<li><a class="condo-link" href="/spacio/condos">Condominiums</a></li>
+			<li><a class="home-link" href="/homes.php">Custom Homes</a></li>
+			<li><a class="condo-link" href="/condos.php">Condominiums</a></li>
 			<li class="divider"></li>
 			<li><a href="#about-us">About us</a></li>
 			<li><a href="#our-portfolio">Portfolio</a></li>
@@ -80,8 +80,8 @@
 	</section>
 	<div class="row" id="our-portfolio">
 		<div class="colspan12-10 colspan6-4 colspan2-1 typeset as-grid">
-			<h2 class="editable section-head">PORTFOLIO</h2>
-			<p>Take a moment and browse through a few examples of our work.</p>
+			<h2 id="port-header" class="editable section-head">PORTFOLIO</h2>
+			<p id="port-desc" class="editable">Take a moment and browse through a few examples of our work.</p>
 		</div>
 		<div class="colspan12-2 colspan6-2 colspan2-1 as-grid next-prev">
 			<button class="prev" onclick='portfolio.prev()'>«</button> 
@@ -112,13 +112,13 @@
 	<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
 		<blockquote class="editable">
 			<p class="quote">For our daunting 224 room and corridor renovation project here at Marriott South Beach, we knew efficiency was critical, and adhering to budget was a mandate. Under severely tight time restrictions, SPACiO not only rose to the challenge, they surpassed every expectation. They complete this immense task ahead of schedule and under budget – and their quality of work was indeed superior.</p>
-			<p class="source"><b>Diego Ardid</b> <br>Vice President, Key International, Komar Investments, Inc., Eden Roc LLP</p>
+			<p class="source">V.P., Key International</p>
 		</blockquote>
 	</div>
 	<div class="colspan12-6 colspan6-3 as-grid with-gutter review" id="review2">
 		<blockquote class="editable">
 			<p class="quote">The SPACiO team delivered as advertised – their adept handing of all pre-construction needs was impressive. They professionally coordinated the array of entities involved in this major project in a manner that impacted the hotel operations as minimally as possible. This invaluable service, along with their stellar work, simply reinforced the reputation they’ve built in this industry.</p>
-			<p class="source"><b>GM</b> <br>Marriott South Beach</p>
+			<p class="source">G.M., Marriott South Beach</p>
 		</blockquote>
 	</div>
 </section>

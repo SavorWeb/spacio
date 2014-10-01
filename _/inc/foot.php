@@ -90,7 +90,8 @@ $(document).ready(function () {
 
 	    // Don't execute if we're in the Live Editor
     if ( window.isCMS ) {
-
+    	// $('#client-image').removeClass('.building');
+    	// $('#client-image').removeClass('.colab');
     } else {
     	$(window).load(function(){
 			if ($(window).width() > 1100) {

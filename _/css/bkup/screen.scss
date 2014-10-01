@@ -422,7 +422,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	position: relative;
 	margin-bottom: 30px;
 	border-top: 5px solid $primary;
-	background-repeat: no-repeat;
 
 	@include break($b) {
 	min-height: 400px;
@@ -1044,10 +1043,10 @@ blockquote {
 			position: relative;
 			
 			img.colab {
-				margin-top: 130px; //425
+				margin-top: 60px; //425
 			}
 			img.building {
-				margin-top: 150px; //425
+				margin-top: 130px; //425
 			}
 		}
 	}
@@ -1092,8 +1091,11 @@ blockquote {
 // 	}
 // }
 
-.is-cms .parallax-item #client-image {
-	margin-top: 0 !important;
+.is-cms .parallax-item {
+	margin-top: 0;
+	img {
+		margin-top: -30px;
+	}
 }
 
 .is-cms .remodal-overlay {

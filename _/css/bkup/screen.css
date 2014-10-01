@@ -78,379 +78,7 @@ textarea {
   clear: both;
 }
 
-/*! Remodal - v0.1.6 - 2014-05-16
- * https://github.com/VodkaBears/remodal
- * Copyright (c) 2014 VodkaBears; */
-/* ==========================================================================
-   Remodal necessary styles
-   ========================================================================== */
-/* Hide scroll bar */
-html.remodal_lock, body.remodal_lock {
-  overflow: hidden;
-}
-
-/* Anti FOUC */
-.remodal, [data-remodal-id] {
-  visibility: hidden;
-}
-
-/* Overlay necessary styles */
-.remodal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10000;
-  display: none;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  text-align: center;
-}
-
-.remodal-overlay:after {
-  display: inline-block;
-  height: 100%;
-  margin-left: -0.05em;
-  content: '';
-}
-
-/* Fix iPad, iPhone glitches */
-.remodal-overlay > * {
-  -webkit-transform: translateZ(0px);
-}
-
-/* Modal dialog necessary styles */
-.remodal {
-  position: relative;
-  display: inline-block;
-}
-
-/* ==========================================================================
-   Remodal default theme
-   ========================================================================== */
-/* Default theme font */
-/*@import url(http://fonts.googleapis.com/css?family=Exo+2:700,400&subset=latin,cyrillic);
-
-.remodal, .remodal * {
-    font-family: 'Exo 2', sans-serif;
-}*/
-/* Background for effects */
-.remodal-bg {
-  -webkit-transition: -webkit-filter 0.2s linear;
-  -moz-transition: -moz-filter 0.2s linear;
-  -o-transition: -o-filter 0.2s linear;
-  transition: filter 0.2s linear;
-}
-
-body.remodal_active .remodal-bg {
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
-}
-
-/* Overlay default theme styles */
-.remodal-overlay {
-  opacity: 0;
-  background: rgba(34, 34, 34, 0.8);
-  -webkit-transition: opacity 0.2s linear;
-  -moz-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-}
-
-body.remodal_active .remodal-overlay {
-  opacity: 1;
-}
-
-/* Modal dialog default theme styles */
-.remodal {
-  width: 100%;
-  min-height: 100%;
-  padding: 35px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  text-align: left;
-  font-size: 16px;
-  background: #f4f4f4;
-  background-clip: padding-box;
-  -webkit-box-shadow: 0px 0px 8px #171a24;
-  box-shadow: 0px 0px 8px #171a24;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  transform: scale(0.95);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  -moz-transition: -moz-transform 0.2s linear;
-  -o-transition: -o-transform 0.2s linear;
-  transition: transform 0.2s linear;
-}
-
-body.remodal_active .remodal {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-
-/* Modal dialog vertical align  */
-.remodal, .remodal-overlay:after {
-  vertical-align: middle;
-}
-
-/* Close button */
-.remodal-close {
-  position: absolute;
-  top: 35px;
-  right: 35px;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
-  /*    -webkit-border-radius: 50%;
-      border-radius: 50%;*/
-  border: 1px solid #c30016;
-  -webkit-transition: background 0.2s linear;
-  -moz-transition: background 0.2s linear;
-  -o-transition: background 0.2s linear;
-  transition: background 0.2s linear;
-}
-
-.remodal-close:after {
-  display: block;
-  margin-top: 5px;
-  font-size: 40px;
-  font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
-  font-weight: lighter !important;
-  content: "×";
-  line-height: 28px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #c30016;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-
-.remodal-close:hover, .remodal-close:active {
-  background: #c30016;
-}
-
-.remodal-close:hover.remodal-close:after, .remodal-close:active.remodal-close:after {
-  color: #f4f4f4;
-}
-
-/* Dialog buttons */
-/* Media queries
-   ========================================================================== */
-@media only screen and (min-width: 40.063em) {
-  .remodal {
-    max-width: 700px;
-    margin: 20px auto;
-    min-height: 0;
-    /*
-            -webkit-border-radius: 6px;
-            border-radius: 6px;*/
-  }
-}
-/*! responsive-nav.js 1.0.32 by @viljamis */
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
-}
-
-.nav-collapse li {
-  width: 100%;
-  display: block;
-}
-
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
-}
-
-.nav-collapse.opened {
-  max-height: 9999px;
-}
-
-.disable-pointer-events {
-  pointer-events: none !important;
-}
-
-.nav-toggle {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-@media screen and (min-width: 40em) {
-  .js .nav-collapse {
-    position: relative;
-  }
-
-  .js .nav-collapse.closed {
-    max-height: none;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-}
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe img {
-  width: 100%;
-}
-
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-
-.swipe-wrap > a {
-  float: left;
-  width: 100%;
-  position: relative;
-}
-
-.swipe-wrap a {
-  display: block;
-}
-
-button {
-  display: inline-block;
-  margin: 0 1em;
-  border: none;
-  background: none;
-  outline: none;
-}
-button span {
-  display: block;
-}
-
-.lines-button {
-  padding: 1rem 0.5rem;
-  transition: .3s;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 0.2857143rem;
-  /* */
-}
-.lines-button:hover {
-  opacity: 1;
-}
-.lines-button:active {
-  transition: 0;
-}
-
-.lines {
-  display: inline-block;
-  width: 2rem;
-  height: 0.2857143rem;
-  background: #000;
-  border-radius: 0.1428571rem;
-  transition: 0.3s;
-  position: relative;
-}
-.lines:before, .lines:after {
-  display: inline-block;
-  width: 2rem;
-  height: 0.2857143rem;
-  background: #000;
-  border-radius: 0.1428571rem;
-  transition: 0.3s;
-  position: absolute;
-  left: 0;
-  content: '';
-  -webkit-transform-origin: 0.1428571rem center;
-  transform-origin: 0.1428571rem center;
-}
-.lines:before {
-  top: 0.5rem;
-}
-.lines:after {
-  top: -0.5rem;
-}
-
-.lines-button:hover .lines:before {
-  top: 0.5714286rem;
-}
-.lines-button:hover .lines:after {
-  top: -0.5714286rem;
-}
-
-.lines-button.close {
-  -webkit-transform: scale3d(0.8, 0.8, 0.8);
-  transform: scale3d(0.8, 0.8, 0.8);
-}
-
-.lines-button.x.close .lines {
-  background: transparent;
-}
-.lines-button.x.close .lines:before, .lines-button.x.close .lines:after {
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  top: 0;
-  width: 2rem;
-}
-.lines-button.x.close .lines:before {
-  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-  transform: rotate3d(0, 0, 1, 45deg);
-}
-.lines-button.x.close .lines:after {
-  -webkit-transform: rotate3d(0, 0, 1, -45deg);
-  transform: rotate3d(0, 0, 1, -45deg);
-}
-
-.lines-button.x2 .lines {
-  transition: background .3s .5s ease;
-}
-.lines-button.x2 .lines:before, .lines-button.x2 .lines:after {
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  transition: top .3s .6s ease, -webkit-transform .3s ease;
-  transition: top .3s .6s ease, transform .3s ease;
-}
-
-.lines-button.x2.close .lines {
-  transition: background .3s 0s ease;
-  background: transparent;
-}
-.lines-button.x2.close .lines:before, .lines-button.x2.close .lines:after {
-  transition: top .3s ease, -webkit-transform .3s .5s ease;
-  transition: top .3s ease, transform .3s .5s ease;
-  top: 0;
-  width: 2rem;
-}
-.lines-button.x2.close .lines:before {
-  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-  transform: rotate3d(0, 0, 1, 45deg);
-}
-.lines-button.x2.close .lines:after {
-  -webkit-transform: rotate3d(0, 0, 1, -45deg);
-  transform: rotate3d(0, 0, 1, -45deg);
-}
-
+/* No files to import found in modules/* */
 /* ::Base styles */
 /* ------------------------------------------------------------ */
 html {
@@ -868,7 +496,6 @@ a:not(> img) {
   position: relative;
   margin-bottom: 30px;
   border-top: 5px solid #c30016;
-  background-repeat: no-repeat;
 }
 .lt-ie9 .main-cover {
   min-height: 400px;
@@ -1555,10 +1182,10 @@ blockquote .source {
   position: relative;
 }
 .lt-ie9 .client .parallax-item img.colab {
-  margin-top: 130px;
+  margin-top: 60px;
 }
 .lt-ie9 .client .parallax-item img.building {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 @media screen and (min-width: 960px) {
   .client {
@@ -1573,10 +1200,10 @@ blockquote .source {
     position: relative;
   }
   .client .parallax-item img.colab {
-    margin-top: 130px;
+    margin-top: 60px;
   }
   .client .parallax-item img.building {
-    margin-top: 150px;
+    margin-top: 130px;
   }
 }
 
@@ -1616,8 +1243,11 @@ blockquote .source {
   display: block;
 }
 
-.is-cms .parallax-item #client-image {
-  margin-top: 0 !important;
+.is-cms .parallax-item {
+  margin-top: 0;
+}
+.is-cms .parallax-item img {
+  margin-top: -30px;
 }
 
 .is-cms .remodal-overlay {

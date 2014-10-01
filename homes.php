@@ -35,9 +35,9 @@
 	<div class="row">
 		<div class="logomark"><a href="#top"><img src="_/img/logomark.png" alt=""></a></div>
 		<ul>
-			<li><a class="comm-link" href="/spacio/">Commercial</a></li>
+			<li><a class="comm-link" href="/">Commercial</a></li>
 			<li><a class="home-link" href="#top">Custom Homes</a></li>
-			<li><a class="condo-link" href="/spacio/condos">Condominiums</a></li>
+			<li><a class="condo-link" href="/condos.php">Condominiums</a></li>
 			<li class="divider"></li>
 			<li><a href="#about-us">About us</a></li>
 			<li><a href="#our-portfolio">Portfolio</a></li>
@@ -85,8 +85,8 @@
 	</section>
 	<div class="row" id="our-portfolio">
 		<div class="colspan12-10 colspan6-4 colspan2-1 typeset as-grid">
-			<h2 class="editable section-head">PORTFOLIO</h2>
-			<p>Take a moment and browse through a few examples of our work.</p>
+			<h2 id="port-header" class="editable section-head">PORTFOLIO</h2>
+			<p id="port-desc" class="editable">Take a moment and browse through a few examples of our work.</p>
 		</div>
 		<div class="colspan12-2 colspan6-2 colspan2-1 as-grid next-prev">
 			<button class="prev" onclick='portfolio.prev()'>«</button> 
@@ -117,13 +117,13 @@
 	<div class="colspan12-6 colspan6-3 as-grid review" id="review1">
 		<blockquote class="editable">
 			<p class="quote">Based on my past professional experience with SPACiO, I enlisted their team to create my 6000 square foot custom home. I knew I was hiring more than a general contractor, I was hiring elite, talented people who could coordinate and oversee the whole process. Their skill set is comprehensive – an unmatched ability to assess feasibility, deliver site analysis, efficiently budget, and skillfully construct.  The project has just commenced, and SPACiO has been tremendous so far.</p>
-			<p class="source"><b>Juan Carlos Escotet</b> <br>Property Owner</p>
+			<p class="source">Custom Home Property Owner</p>
 		</blockquote>
 	</div>
 	<div class="colspan12-6 colspan6-3 as-grid with-gutter review" id="review2">
 		<blockquote class="editable">
 			<p class="quote">SPACiO has just completed the construction of my brand new 6600 square foot custom home on the Venetian Islands, and although I did expect superior work, the outcome still far exceeded my expectations. Their team consists of immensely talented people, all of whom consistently went out of their way to make the entire process - from design to construction – unbelievably smooth. If I ever plan to create another dream house, it will be SPACiO that leads the way.</p>
-			<p class="source"><b>Ricardo Morayes</b> <br>Property Owner – Construction Completed June 2014</p>
+			<p class="source">Custom Home Property Owner</p>
 		</blockquote>
 	</div>
 </section>
